@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3555D046302F36210023F816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555D03C302F36210023F816 /* AppDelegate.swift */; };
+		3555D047302F36210023F816 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555D043302F36210023F816 /* SceneDelegate.swift */; };
+		3555D048302F36210023F816 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555D044302F36210023F816 /* ViewController.swift */; };
+		3555D049302F36210023F816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3555D03D302F36210023F816 /* Assets.xcassets */; };
+		3555D04B302F36210023F816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3555D040302F36210023F816 /* LaunchScreen.storyboard */; };
+		3555D04C302F36210023F816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3555D042302F36210023F816 /* Main.storyboard */; };
+		3555D077302F40170023F816 /* NotificationServiceExt.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3555D070302F40170023F816 /* NotificationServiceExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3555D083302F40500023F816 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555D080302F40500023F816 /* NotificationService.swift */; };
+		3555D0CA302F696F0023F816 /* NVECTASDK in Frameworks */ = {isa = PBXBuildFile; productRef = 3555D0C9302F696F0023F816 /* NVECTASDK */; };
+		3555D0CC302F696F0023F816 /* notifyvisitorsNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 3555D0CB302F696F0023F816 /* notifyvisitorsNotificationService */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3555D075302F40170023F816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35939CD6302F18C100E751C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3555D06F302F40170023F816;
+			remoteInfo = NotificationServiceExt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3555D05D302F36460023F816 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3555D077302F40170023F816 /* NotificationServiceExt.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3555D03C302F36210023F816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3555D03D302F36210023F816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3555D03E302F36210023F816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3555D03F302F36210023F816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3555D041302F36210023F816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3555D043302F36210023F816 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3555D044302F36210023F816 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3555D068302F39540023F816 /* nvecta-ios-sdk-example-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "nvecta-ios-sdk-example-app.entitlements"; sourceTree = "<group>"; };
+		3555D070302F40170023F816 /* NotificationServiceExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3555D07F302F40500023F816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3555D080302F40500023F816 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		3555D089302F42070023F816 /* NotificationServiceExt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationServiceExt.entitlements; sourceTree = "<group>"; };
+		3555D090302F47E10023F816 /* notifyvisitorsNotificationService.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = notifyvisitorsNotificationService.xcframework; path = ../../Frameworks/notifyvisitorsNotificationService.xcframework; sourceTree = "<group>"; };
+		35939CDE302F18C100E751C1 /* nvecta-ios-sdk-example-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nvecta-ios-sdk-example-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3555D06D302F40170023F816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3555D0CC302F696F0023F816 /* notifyvisitorsNotificationService in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35939CDB302F18C100E751C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3555D0CA302F696F0023F816 /* NVECTASDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3555D045302F36210023F816 /* nvecta-ios-sdk-example-app */ = {
+			isa = PBXGroup;
+			children = (
+				3555D068302F39540023F816 /* nvecta-ios-sdk-example-app.entitlements */,
+				3555D03C302F36210023F816 /* AppDelegate.swift */,
+				3555D03D302F36210023F816 /* Assets.xcassets */,
+				3555D03E302F36210023F816 /* Info.plist */,
+				3555D040302F36210023F816 /* LaunchScreen.storyboard */,
+				3555D042302F36210023F816 /* Main.storyboard */,
+				3555D043302F36210023F816 /* SceneDelegate.swift */,
+				3555D044302F36210023F816 /* ViewController.swift */,
+			);
+			path = "nvecta-ios-sdk-example-app";
+			sourceTree = "<group>";
+		};
+		3555D081302F40500023F816 /* NotificationServiceExt */ = {
+			isa = PBXGroup;
+			children = (
+				3555D089302F42070023F816 /* NotificationServiceExt.entitlements */,
+				3555D07F302F40500023F816 /* Info.plist */,
+				3555D080302F40500023F816 /* NotificationService.swift */,
+			);
+			path = NotificationServiceExt;
+			sourceTree = "<group>";
+		};
+		3555D08F302F47E10023F816 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3555D090302F47E10023F816 /* notifyvisitorsNotificationService.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35939CD5302F18C100E751C1 = {
+			isa = PBXGroup;
+			children = (
+				3555D045302F36210023F816 /* nvecta-ios-sdk-example-app */,
+				3555D081302F40500023F816 /* NotificationServiceExt */,
+				3555D08F302F47E10023F816 /* Frameworks */,
+				35939CDF302F18C100E751C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35939CDF302F18C100E751C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35939CDE302F18C100E751C1 /* nvecta-ios-sdk-example-app.app */,
+				3555D070302F40170023F816 /* NotificationServiceExt.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3555D06F302F40170023F816 /* NotificationServiceExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3555D07B302F40170023F816 /* Build configuration list for PBXNativeTarget "NotificationServiceExt" */;
+			buildPhases = (
+				3555D06C302F40170023F816 /* Sources */,
+				3555D06D302F40170023F816 /* Frameworks */,
+				3555D06E302F40170023F816 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationServiceExt;
+			packageProductDependencies = (
+				3555D0CB302F696F0023F816 /* notifyvisitorsNotificationService */,
+			);
+			productName = NotificationServiceExt;
+			productReference = 3555D070302F40170023F816 /* NotificationServiceExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		35939CDD302F18C100E751C1 /* nvecta-ios-sdk-example-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35939CF1302F18C300E751C1 /* Build configuration list for PBXNativeTarget "nvecta-ios-sdk-example-app" */;
+			buildPhases = (
+				35939CDA302F18C100E751C1 /* Sources */,
+				35939CDB302F18C100E751C1 /* Frameworks */,
+				35939CDC302F18C100E751C1 /* Resources */,
+				3555D05D302F36460023F816 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3555D076302F40170023F816 /* PBXTargetDependency */,
+			);
+			name = "nvecta-ios-sdk-example-app";
+			packageProductDependencies = (
+				35939D07302F19DC00E751C1 /* NVECTASDK */,
+				3555D017302F204A0023F816 /* NVECTASDK */,
+				3555D0B2302F5BBD0023F816 /* NVECTASDK */,
+				3555D0C9302F696F0023F816 /* NVECTASDK */,
+			);
+			productName = "nvecta-ios-sdk-example-app";
+			productReference = 35939CDE302F18C100E751C1 /* nvecta-ios-sdk-example-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35939CD6302F18C100E751C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					3555D06F302F40170023F816 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					35939CDD302F18C100E751C1 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = 35939CD9302F18C100E751C1 /* Build configuration list for PBXProject "nvecta-ios-sdk-example-app" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35939CD5302F18C100E751C1;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3555D0C8302F696F0023F816 /* XCLocalSwiftPackageReference "../../../nvecta-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 35939CDF302F18C100E751C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35939CDD302F18C100E751C1 /* nvecta-ios-sdk-example-app */,
+				3555D06F302F40170023F816 /* NotificationServiceExt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3555D06E302F40170023F816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35939CDC302F18C100E751C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3555D049302F36210023F816 /* Assets.xcassets in Resources */,
+				3555D04B302F36210023F816 /* LaunchScreen.storyboard in Resources */,
+				3555D04C302F36210023F816 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3555D06C302F40170023F816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3555D083302F40500023F816 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35939CDA302F18C100E751C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3555D046302F36210023F816 /* AppDelegate.swift in Sources */,
+				3555D047302F36210023F816 /* SceneDelegate.swift in Sources */,
+				3555D048302F36210023F816 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3555D076302F40170023F816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3555D06F302F40170023F816 /* NotificationServiceExt */;
+			targetProxy = 3555D075302F40170023F816 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3555D040302F36210023F816 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3555D03F302F36210023F816 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3555D042302F36210023F816 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3555D041302F36210023F816 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3555D078302F40170023F816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationServiceExt/NotificationServiceExt.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JW4924F8P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nvecta.nvecta-ios-sdk-example-app.NotificationServiceExt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3555D079302F40170023F816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationServiceExt/NotificationServiceExt.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JW4924F8P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nvecta.nvecta-ios-sdk-example-app.NotificationServiceExt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		35939CF2302F18C300E751C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "nvecta-ios-sdk-example-app/nvecta-ios-sdk-example-app.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JW4924F8P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "nvecta-ios-sdk-example-app/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nvecta.nvecta-ios-sdk-example-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35939CF3302F18C300E751C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "nvecta-ios-sdk-example-app/nvecta-ios-sdk-example-app.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JW4924F8P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "nvecta-ios-sdk-example-app/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nvecta.nvecta-ios-sdk-example-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		35939CF4302F18C300E751C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4JW4924F8P;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35939CF5302F18C300E751C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4JW4924F8P;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3555D07B302F40170023F816 /* Build configuration list for PBXNativeTarget "NotificationServiceExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3555D078302F40170023F816 /* Debug */,
+				3555D079302F40170023F816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35939CD9302F18C100E751C1 /* Build configuration list for PBXProject "nvecta-ios-sdk-example-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35939CF4302F18C300E751C1 /* Debug */,
+				35939CF5302F18C300E751C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35939CF1302F18C300E751C1 /* Build configuration list for PBXNativeTarget "nvecta-ios-sdk-example-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35939CF2302F18C300E751C1 /* Debug */,
+				35939CF3302F18C300E751C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		3555D0C8302F696F0023F816 /* XCLocalSwiftPackageReference "../../../nvecta-ios-sdk" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../nvecta-ios-sdk";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3555D017302F204A0023F816 /* NVECTASDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NVECTASDK;
+		};
+		3555D0B2302F5BBD0023F816 /* NVECTASDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NVECTASDK;
+		};
+		3555D0C9302F696F0023F816 /* NVECTASDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NVECTASDK;
+		};
+		3555D0CB302F696F0023F816 /* notifyvisitorsNotificationService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = notifyvisitorsNotificationService;
+		};
+		35939D07302F19DC00E751C1 /* NVECTASDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NVECTASDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 35939CD6302F18C100E751C1 /* Project object */;
+}

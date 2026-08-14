@@ -4,20 +4,52 @@
 import PackageDescription
 
 let package = Package(
-    name: "nvecta-ios-sdk",
+    name: "NVECTASDK",
+    platforms: [
+        .iOS(.v13)
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "nvecta-ios-sdk",
-            targets: ["nvecta-ios-sdk"]
+            name: "NVECTASDK",
+            targets: ["NVECTASDK", "notifyvisitors"]
         ),
+        .library(
+            name: "notifyvisitors",
+            targets: ["notifyvisitors"]
+        ),
+        .library(
+            name: "notifyvisitorsNudges",
+            targets: ["notifyvisitorsNudges"]
+        ),
+        .library(
+            name: "notifyvisitorsNotificationService",
+            targets: ["notifyvisitorsNotificationService"]
+        )
+//        .library(
+//            name: "NVECTAAdTrackingSDK",
+//            targets: ["NVECTAAdTrackingSDK"]
+//        )
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "nvecta-ios-sdk"
+        .binaryTarget(
+            name: "NVECTASDK",
+            path: "Frameworks/NVECTASDK.xcframework"
         ),
-
+        .binaryTarget(
+            name: "notifyvisitors",
+            path: "Frameworks/notifyvisitors.xcframework"
+        ),
+        .binaryTarget(
+            name: "notifyvisitorsNudges",
+            path: "Frameworks/notifyvisitorsNudges.xcframework"
+        ),
+        .binaryTarget(
+            name: "notifyvisitorsNotificationService",
+            path: "Frameworks/notifyvisitorsNotificationService.xcframework"
+        )
+//        .binaryTarget(
+//            name: "NVECTAAdTrackingSDK",
+//            path: "Frameworks/NVECTAAdTrackingSDK.xcframework"
+//        )
     ]
 )

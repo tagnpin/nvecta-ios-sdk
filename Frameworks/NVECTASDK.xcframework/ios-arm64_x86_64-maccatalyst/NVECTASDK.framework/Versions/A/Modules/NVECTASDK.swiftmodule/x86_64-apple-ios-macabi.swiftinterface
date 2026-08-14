@@ -1,0 +1,164 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target x86_64-apple-ios15.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NVECTASDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+import Foundation
+import Swift
+import UIKit
+import UserNotifications
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import notifyvisitors
+extension NVECTASDK.NVECTA {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func show(userToken tokens: [Swift.String : Any]?, customRule: [Swift.String : Any]?)
+  #endif
+  @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @objc final public func dismissAllInAppNotifications()
+  @objc final public func stopInAppNotifications()
+}
+extension NVECTASDK.NVECTA {
+  @objc @discardableResult
+  final public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @discardableResult
+  final public func application(_ application: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([any UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
+  #endif
+  @objc @available(iOS 13.0, *)
+  final public func scene(_ scene: UIKit.UIScene, willConnectTo session: UIKit.UISceneSession, options connectionOptions: UIKit.UIScene.ConnectionOptions)
+  @objc @available(iOS 13.0, *)
+  final public func scene(_ scene: UIKit.UIScene, openURLContexts contexts: Swift.Set<UIKit.UIOpenURLContext>)
+  @objc @available(iOS 13.0, *)
+  final public func scene(_ scene: UIKit.UIScene, continue userActivity: Foundation.NSUserActivity)
+}
+public struct UserTrackResponse {
+  public let rawData: [Swift.String : Any]
+}
+public struct AnyCodable : Swift.Codable {
+  public let value: Any
+  public init(_ value: Any)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class NVECTA : ObjectiveC.NSObject {
+  @objc public static let shared: NVECTASDK.NVECTA
+  weak final public var delegate: (any NVECTASDK.NVECTADelegate)? {
+    get
+    set
+  }
+  @objc final public func register(mode: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func register(brandID: Swift.Int, secretKey: Swift.String, appMode: Swift.String, launchingOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getSessionData() -> Foundation.NSDictionary?
+  #endif
+  @objc deinit
+}
+extension NVECTASDK.NVECTA {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func registerPush(delegate: (any UserNotifications.UNUserNotificationCenterDelegate)?, application: UIKit.UIApplication, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?)
+  #endif
+  @objc final public func didRegisterPushToken(_ application: UIKit.UIApplication, token: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getPushRegistrationToken() -> Swift.String?
+  #endif
+  @objc final public func didReceiveRemoteNotification(_ userInfo: [Swift.AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIKit.UIBackgroundFetchResult) -> Swift.Void)
+  @objc final public func willPresent(_ notification: UserNotifications.UNNotification, completion: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
+  @objc final public func didReceive(_ response: UserNotifications.UNNotificationResponse, completion: @escaping () -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @available(*, deprecated, renamed: "handleNotificationResponse(_:autoRedirect:completion:)", message: "Use handleNotificationResponse(_:autoRedirect:completion:)  instead")
+  final public func pushNotificationActionData(from response: UserNotifications.UNNotificationResponse, autoRedirectOtherApps: Swift.Bool, completion: @escaping ([Swift.AnyHashable : Any]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func handleNotificationResponse(_ response: UserNotifications.UNNotificationResponse, autoRedirect: Swift.Bool, completion: @escaping (NVECTASDK.NotificationClickResponse?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func setPushPreferences(_ preferences: [Swift.String]?, unsubscribeFromAll: Swift.Bool)
+  #endif
+  final public func updateBadge(using action: NVECTASDK.BadgeUpdateAction)
+}
+extension NVECTASDK.NVECTA {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func userIdentifier(WithUserID userID: Swift.String?, userParams: [Swift.String : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func userIdentifier(WithUserParams userParams: [Swift.String : Any]?, onUserTrackListener: @escaping (Swift.Result<NVECTASDK.UserTrackResponse, any Swift.Error>) -> Swift.Void?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getNvUid() -> Swift.String?
+  #endif
+}
+public struct UserProfile : Swift.Codable {
+  public let userId: Swift.String?
+  public var name: Swift.String?
+  public var email: Swift.String?
+  public var phone: Swift.String?
+  public var attributes: [Swift.String : NVECTASDK.AnyCodable]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(userId: Swift.String?, name: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil, attributes: [Swift.String : NVECTASDK.AnyCodable]? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension NVECTASDK.NVECTA {
+  @objc final public func applicationDidBecomeActive(_ application: UIKit.UIApplication)
+  @objc final public func applicationDidEnterBackground(_ application: UIKit.UIApplication)
+  @objc final public func applicationWillEnterForeground(_ application: UIKit.UIApplication)
+  @objc final public func applicationWillTerminate(_ application: UIKit.UIApplication)
+}
+public enum BadgeUpdateAction {
+  case increment
+  case decrement
+  case clear
+  public static func == (a: NVECTASDK.BadgeUpdateAction, b: NVECTASDK.BadgeUpdateAction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum UserError : Swift.Error {
+  case invalidResponse
+  case profileCreationFailed(Swift.String)
+}
+public struct NotificationClickResponse {
+  public let rawData: [Swift.String : Any]
+}
+public protocol NVECTADelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, renamed: "nvectaDidTrackEventResponse(_:)", message: "Use nvectaDidTrackEventResponse(_:)  instead")
+  func nvectaEventsResponseCallback(_ callback: [Swift.AnyHashable : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func nvectaDidTrackEventResponse(_ response: [Swift.String : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func nvectaKnownUserIdentified(_ response: [Swift.String : Any]?)
+  #endif
+}
+extension NVECTASDK.NVECTADelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func nvectaEventsResponseCallback(_ callback: [Swift.AnyHashable : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func nvectaDidTrackEventResponse(_ response: [Swift.String : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func nvectaKnownUserIdentified(_ response: [Swift.String : Any]?)
+  #endif
+}
+@available(iOS 13.0, *)
+extension NVECTASDK.NVECTA {
+  @objc final public func sceneDidBecomeActive(_ scene: UIKit.UIScene)
+  @objc final public func sceneWillEnterForeground(_ scene: UIKit.UIScene)
+  @objc final public func sceneDidEnterBackground(_ scene: UIKit.UIScene)
+}
+extension NVECTASDK.NVECTA {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func trackEvent(forEventName eventName: Swift.String, attributes: [Swift.String : Any]?, ltv: Swift.String, scope: Swift.Int)
+  #endif
+  @objc final public func trackScreen(forScreenName screenName: Swift.String)
+}
+extension NVECTASDK.BadgeUpdateAction : Swift.Equatable {}
+extension NVECTASDK.BadgeUpdateAction : Swift.Hashable {}
