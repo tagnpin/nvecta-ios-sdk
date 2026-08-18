@@ -7,6 +7,7 @@
 
 import UIKit
 import NVECTASDK
+//import notifyvisitors
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         NVECTA.shared.scene(scene, willConnectTo: session, options: connectionOptions)
+//        notifyvisitors.scene(scene, willConnectTo: session, options: connectionOptions)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -30,6 +32,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func sceneDidBecomeActive(_ scene: UIScene) {
         NVECTA.shared.sceneDidBecomeActive(scene)
+//        notifyvisitors.sceneDidBecomeActive(scene)
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
     }
@@ -41,12 +44,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func sceneWillEnterForeground(_ scene: UIScene) {
         NVECTA.shared.sceneWillEnterForeground(scene)
+//        notifyvisitors.sceneWillEnterForeground(scene)
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
         NVECTA.shared.sceneDidEnterBackground(scene)
+//        notifyvisitors.sceneDidEnterBackground(scene)
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
@@ -54,6 +59,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
         NVECTA.shared.scene(scene, openURLContexts: URLContexts)
+//        notifyvisitors.scene(scene, openURLContexts: URLContexts)
     }
     
 

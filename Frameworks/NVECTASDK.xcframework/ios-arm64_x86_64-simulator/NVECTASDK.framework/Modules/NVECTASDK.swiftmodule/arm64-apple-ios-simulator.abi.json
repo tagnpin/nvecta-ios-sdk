@@ -446,11 +446,11 @@
                 "kind": "TypeNominal",
                 "name": "NVECTA",
                 "printedName": "NVECTASDK.NVECTA",
-                "usr": "c:@M@NVECTASDK@objc(cs)NVECTA"
+                "usr": "c:@M@NVECTASDK@objc(cs)NVECTASDK"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@NVECTASDK@objc(cs)NVECTA(cpy)shared",
+            "usr": "c:@M@NVECTASDK@objc(cs)NVECTASDK(cpy)shared",
             "mangledName": "$s9NVECTASDK6NVECTAC6sharedACvpZ",
             "moduleName": "NVECTASDK",
             "static": true,
@@ -473,11 +473,11 @@
                     "kind": "TypeNominal",
                     "name": "NVECTA",
                     "printedName": "NVECTASDK.NVECTA",
-                    "usr": "c:@M@NVECTASDK@objc(cs)NVECTA"
+                    "usr": "c:@M@NVECTASDK@objc(cs)NVECTASDK"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@NVECTASDK@objc(cs)NVECTA(cm)shared",
+                "usr": "c:@M@NVECTASDK@objc(cs)NVECTASDK(cm)shared",
                 "mangledName": "$s9NVECTASDK6NVECTAC6sharedACvgZ",
                 "moduleName": "NVECTASDK",
                 "static": true,
@@ -502,7 +502,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9NVECTASDK6NVECTAC8delegateAA14NVECTADelegate_pSgvp",
+            "usr": "c:@M@NVECTASDK@objc(cs)NVECTASDK(py)delegate",
             "mangledName": "$s9NVECTASDK6NVECTAC8delegateAA14NVECTADelegate_pSgvp",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -510,7 +510,8 @@
               "Final",
               "HasStorage",
               "ReferenceOwnership",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "ownership": 1,
             "hasStorage": true,
@@ -529,19 +530,20 @@
                         "kind": "TypeNominal",
                         "name": "NVECTADelegate",
                         "printedName": "any NVECTASDK.NVECTADelegate",
-                        "usr": "s:9NVECTASDK14NVECTADelegateP"
+                        "usr": "c:@M@NVECTASDK@objc(pl)NVECTADelegate"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9NVECTASDK6NVECTAC8delegateAA14NVECTADelegate_pSgvg",
+                "usr": "c:@M@NVECTASDK@objc(cs)NVECTASDK(im)delegate",
                 "mangledName": "$s9NVECTASDK6NVECTAC8delegateAA14NVECTADelegate_pSgvg",
                 "moduleName": "NVECTASDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               },
@@ -564,19 +566,20 @@
                         "kind": "TypeNominal",
                         "name": "NVECTADelegate",
                         "printedName": "any NVECTASDK.NVECTADelegate",
-                        "usr": "s:9NVECTASDK14NVECTADelegateP"
+                        "usr": "c:@M@NVECTASDK@objc(pl)NVECTADelegate"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9NVECTASDK6NVECTAC8delegateAA14NVECTADelegate_pSgvs",
+                "usr": "c:@M@NVECTASDK@objc(cs)NVECTASDK(im)setDelegate:",
                 "mangledName": "$s9NVECTASDK6NVECTAC8delegateAA14NVECTADelegate_pSgvs",
                 "moduleName": "NVECTASDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "set"
               },
@@ -621,7 +624,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NVECTASDK@objc(cs)NVECTA(im)registerWithMode:",
+            "usr": "c:@M@NVECTASDK@objc(cs)NVECTASDK(im)registerWithMode:",
             "mangledName": "$s9NVECTASDK6NVECTAC8register4modeySS_tF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -689,7 +692,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NVECTASDK@objc(cs)NVECTA(im)registerWithBrandID:secretKey:appMode:launchingOptions:",
+            "usr": "c:@M@NVECTASDK@objc(cs)NVECTASDK(im)registerWithBrandID:secretKey:appMode:launchingOptions:",
             "mangledName": "$s9NVECTASDK6NVECTAC8register7brandID9secretKey7appMode16launchingOptionsySi_S2SSDySo019UIApplicationLaunchkG0aypGSgtF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -720,7 +723,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NVECTASDK@objc(cs)NVECTA(im)getSessionData",
+            "usr": "c:@M@NVECTASDK@objc(cs)NVECTASDK(im)getSessionData",
             "mangledName": "$s9NVECTASDK6NVECTAC14getSessionDataSo12NSDictionaryCSgyF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -796,7 +799,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)showWithUserToken:customRule:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)showWithUserToken:customRule:",
             "mangledName": "$s9NVECTASDK6NVECTAC4show9userToken10customRuleySDySSypGSg_AHtF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -824,7 +827,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)scrollViewDidScroll:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)scrollViewDidScroll:",
             "mangledName": "$s9NVECTASDK6NVECTAC19scrollViewDidScrollyySo08UIScrollD0CF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -846,7 +849,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)dismissAllInAppNotifications",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)dismissAllInAppNotifications",
             "mangledName": "$s9NVECTASDK6NVECTAC28dismissAllInAppNotificationsyyF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -868,7 +871,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)stopInAppNotifications",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)stopInAppNotifications",
             "mangledName": "$s9NVECTASDK6NVECTAC22stopInAppNotificationsyyF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -923,7 +926,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)application:open:options:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)application:open:options:",
             "mangledName": "$s9NVECTASDK6NVECTAC11application_4open7optionsSbSo13UIApplicationC_10Foundation3URLVSDySo0F17OpenURLOptionsKeyaypGtF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -993,7 +996,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)application:continue:restorationHandler:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)application:continue:restorationHandler:",
             "mangledName": "$s9NVECTASDK6NVECTAC11application_8continue18restorationHandlerSbSo13UIApplicationC_So14NSUserActivityCySaySo06UIUserI9Restoring_pGSgctF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1034,7 +1037,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)scene:willConnectTo:options:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)scene:willConnectTo:options:",
             "mangledName": "$s9NVECTASDK6NVECTAC5scene_13willConnectTo7optionsySo7UISceneC_So0H7SessionCSo0H17ConnectionOptionsCtF",
             "moduleName": "NVECTASDK",
             "intro_iOS": "13.0",
@@ -1078,7 +1081,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)scene:openURLContexts:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)scene:openURLContexts:",
             "mangledName": "$s9NVECTASDK6NVECTAC5scene_15openURLContextsySo7UISceneC_ShySo16UIOpenURLContextCGtF",
             "moduleName": "NVECTASDK",
             "intro_iOS": "13.0",
@@ -1114,7 +1117,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)scene:continue:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)scene:continue:",
             "mangledName": "$s9NVECTASDK6NVECTAC5scene_8continueySo7UISceneC_So14NSUserActivityCtF",
             "moduleName": "NVECTASDK",
             "intro_iOS": "13.0",
@@ -1185,7 +1188,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)registerPushWithDelegate:application:launchOptions:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)registerPushWithDelegate:application:launchOptions:",
             "mangledName": "$s9NVECTASDK6NVECTAC12registerPush8delegate11application13launchOptionsySo32UNUserNotificationCenterDelegate_pSg_So13UIApplicationCSDySo0m6LaunchH3KeyaypGSgtF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1219,7 +1222,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)didRegisterPushToken:token:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)didRegisterPushToken:token:",
             "mangledName": "$s9NVECTASDK6NVECTAC20didRegisterPushToken_5tokenySo13UIApplicationC_10Foundation4DataVtF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1250,7 +1253,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)getPushRegistrationToken",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)getPushRegistrationToken",
             "mangledName": "$s9NVECTASDK6NVECTAC24getPushRegistrationTokenSSSgyF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1309,7 +1312,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)didReceiveRemoteNotification:fetchCompletionHandler:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)didReceiveRemoteNotification:fetchCompletionHandler:",
             "mangledName": "$s9NVECTASDK6NVECTAC28didReceiveRemoteNotification_22fetchCompletionHandlerySDys11AnyHashableVypG_ySo23UIBackgroundFetchResultVctF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1355,7 +1358,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)willPresent:completion:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)willPresent:completion:",
             "mangledName": "$s9NVECTASDK6NVECTAC11willPresent_10completionySo14UNNotificationC_ySo0F19PresentationOptionsVctF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1400,7 +1403,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)didReceive:completion:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)didReceive:completion:",
             "mangledName": "$s9NVECTASDK6NVECTAC10didReceive_10completionySo22UNNotificationResponseC_yyctF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1473,7 +1476,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)pushNotificationActionDataFrom:autoRedirectOtherApps:completion:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)pushNotificationActionDataFrom:autoRedirectOtherApps:completion:",
             "mangledName": "$s9NVECTASDK6NVECTAC26pushNotificationActionData4from21autoRedirectOtherApps10completionySo22UNNotificationResponseC_SbySDys11AnyHashableVypGSgctF",
             "moduleName": "NVECTASDK",
             "deprecated": true,
@@ -1584,7 +1587,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)setPushPreferences:unsubscribeFromAll:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)setPushPreferences:unsubscribeFromAll:",
             "mangledName": "$s9NVECTASDK6NVECTAC18setPushPreferences_18unsubscribeFromAllySaySSGSg_SbtF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1674,7 +1677,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)userIdentifierWithUserID:userParams:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)userIdentifierWithUserID:userParams:",
             "mangledName": "$s9NVECTASDK6NVECTAC14userIdentifier10WithUserID0C6ParamsySSSg_SDySSypGSgtF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1793,7 +1796,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)getNvUid",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)getNvUid",
             "mangledName": "$s9NVECTASDK6NVECTAC8getNvUidSSSgyF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1821,7 +1824,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)applicationDidBecomeActive:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)applicationDidBecomeActive:",
             "mangledName": "$s9NVECTASDK6NVECTAC26applicationDidBecomeActiveyySo13UIApplicationCF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1849,7 +1852,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)applicationDidEnterBackground:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)applicationDidEnterBackground:",
             "mangledName": "$s9NVECTASDK6NVECTAC29applicationDidEnterBackgroundyySo13UIApplicationCF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1877,7 +1880,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)applicationWillEnterForeground:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)applicationWillEnterForeground:",
             "mangledName": "$s9NVECTASDK6NVECTAC30applicationWillEnterForegroundyySo13UIApplicationCF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1905,7 +1908,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)applicationWillTerminate:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)applicationWillTerminate:",
             "mangledName": "$s9NVECTASDK6NVECTAC24applicationWillTerminateyySo13UIApplicationCF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1933,7 +1936,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)sceneDidBecomeActive:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)sceneDidBecomeActive:",
             "mangledName": "$s9NVECTASDK6NVECTAC20sceneDidBecomeActiveyySo7UISceneCF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1961,7 +1964,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)sceneWillEnterForeground:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)sceneWillEnterForeground:",
             "mangledName": "$s9NVECTASDK6NVECTAC24sceneWillEnterForegroundyySo7UISceneCF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -1989,7 +1992,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)sceneDidEnterBackground:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)sceneDidEnterBackground:",
             "mangledName": "$s9NVECTASDK6NVECTAC23sceneDidEnterBackgroundyySo7UISceneCF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -2044,9 +2047,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2056,8 +2067,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)trackEventForEventName:attributes:ltv:scope:",
-            "mangledName": "$s9NVECTASDK6NVECTAC10trackEvent03forD4Name10attributes3ltv5scopeySS_SDySSypGSgSSSitF",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)trackEventForEventName:attributes:ltv:scope:",
+            "mangledName": "$s9NVECTASDK6NVECTAC10trackEvent03forD4Name10attributes3ltv5scopeySS_SDySSypGSgSSSgSitF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
               "Final",
@@ -2084,7 +2095,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTA(im)trackScreenForScreenName:",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)trackScreenForScreenName:",
             "mangledName": "$s9NVECTASDK6NVECTAC11trackScreen03forD4NameySS_tF",
             "moduleName": "NVECTASDK",
             "declAttributes": [
@@ -2096,9 +2107,10 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@NVECTASDK@objc(cs)NVECTA",
+        "usr": "c:@M@NVECTASDK@objc(cs)NVECTASDK",
         "mangledName": "$s9NVECTASDK6NVECTAC",
         "moduleName": "NVECTASDK",
+        "objc_name": "NVECTASDK",
         "declAttributes": [
           "Final",
           "AccessControl",
@@ -3687,14 +3699,17 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9NVECTASDK14NVECTADelegateP28nvectaEventsResponseCallbackyySDys11AnyHashableVypGSgF",
+            "usr": "c:@M@NVECTASDK@objc(pl)NVECTADelegate(im)nvectaEventsResponseCallback:",
             "mangledName": "$s9NVECTASDK14NVECTADelegateP28nvectaEventsResponseCallbackyySDys11AnyHashableVypGSgF",
             "moduleName": "NVECTASDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NVECTASDK.NVECTADelegate>",
             "sugared_genericSig": "<Self where Self : NVECTASDK.NVECTADelegate>",
             "deprecated": true,
             "protocolReq": true,
+            "objc_name": "nvectaEventsResponseCallback:",
             "declAttributes": [
+              "Optional",
+              "ObjC",
               "Available"
             ],
             "reqNewWitnessTableEntry": true,
@@ -3739,12 +3754,17 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9NVECTASDK14NVECTADelegateP27nvectaDidTrackEventResponseyySDySSypGSgF",
+            "usr": "c:@M@NVECTASDK@objc(pl)NVECTADelegate(im)nvectaDidTrackEventResponse:",
             "mangledName": "$s9NVECTASDK14NVECTADelegateP27nvectaDidTrackEventResponseyySDySSypGSgF",
             "moduleName": "NVECTASDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NVECTASDK.NVECTADelegate>",
             "sugared_genericSig": "<Self where Self : NVECTASDK.NVECTADelegate>",
             "protocolReq": true,
+            "objc_name": "nvectaDidTrackEventResponse:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -3787,165 +3807,30 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9NVECTASDK14NVECTADelegateP25nvectaKnownUserIdentifiedyySDySSypGSgF",
+            "usr": "c:@M@NVECTASDK@objc(pl)NVECTADelegate(im)nvectaKnownUserIdentified:",
             "mangledName": "$s9NVECTASDK14NVECTADelegateP25nvectaKnownUserIdentifiedyySDySSypGSgF",
             "moduleName": "NVECTASDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NVECTASDK.NVECTADelegate>",
             "sugared_genericSig": "<Self where Self : NVECTASDK.NVECTADelegate>",
             "protocolReq": true,
+            "objc_name": "nvectaKnownUserIdentified:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "nvectaEventsResponseCallback",
-            "printedName": "nvectaEventsResponseCallback(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.AnyHashable : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.AnyHashable : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AnyHashable",
-                        "printedName": "Swift.AnyHashable",
-                        "usr": "s:s11AnyHashableV"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9NVECTASDK14NVECTADelegatePAAE28nvectaEventsResponseCallbackyySDys11AnyHashableVypGSgF",
-            "mangledName": "$s9NVECTASDK14NVECTADelegatePAAE28nvectaEventsResponseCallbackyySDys11AnyHashableVypGSgF",
-            "moduleName": "NVECTASDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : NVECTASDK.NVECTADelegate>",
-            "sugared_genericSig": "<Self where Self : NVECTASDK.NVECTADelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "nvectaDidTrackEventResponse",
-            "printedName": "nvectaDidTrackEventResponse(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9NVECTASDK14NVECTADelegatePAAE27nvectaDidTrackEventResponseyySDySSypGSgF",
-            "mangledName": "$s9NVECTASDK14NVECTADelegatePAAE27nvectaDidTrackEventResponseyySDySSypGSgF",
-            "moduleName": "NVECTASDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : NVECTASDK.NVECTADelegate>",
-            "sugared_genericSig": "<Self where Self : NVECTASDK.NVECTADelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "nvectaKnownUserIdentified",
-            "printedName": "nvectaKnownUserIdentified(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9NVECTASDK14NVECTADelegatePAAE25nvectaKnownUserIdentifiedyySDySSypGSgF",
-            "mangledName": "$s9NVECTASDK14NVECTADelegatePAAE25nvectaKnownUserIdentifiedyySDySSypGSgF",
-            "moduleName": "NVECTASDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : NVECTASDK.NVECTADelegate>",
-            "sugared_genericSig": "<Self where Self : NVECTASDK.NVECTADelegate>",
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:9NVECTASDK14NVECTADelegateP",
+        "usr": "c:@M@NVECTASDK@objc(pl)NVECTADelegate",
         "mangledName": "$s9NVECTASDK14NVECTADelegateP",
         "moduleName": "NVECTASDK",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ],
         "conformances": [
           {
@@ -4022,7 +3907,7 @@
     {
       "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Public\/NVECTA.swift",
       "kind": "StringLiteral",
-      "offset": 312,
+      "offset": 329,
       "length": 30,
       "value": "\"NVECTA SDK delegate assigned\""
     },

@@ -4,17 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/NVECTASDK.h</key>
+		<data>
+		8C+AKY5fpksWNlk8Eoapy6UwUfg=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		anORiblbW2jCDffPVZOKoskuZ2I=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		AG6Tmy3I3sjRaZjdNNRGsDtUUdY=
+		GwVWcSHyczuAhOrftQ6ezC+dDds=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		J3ygSwpiWdnfzuZEAdlYgEyyyvY=
+		Axp/N6ToXf1mdyNlVGp/TB5PjlE=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +26,15 @@
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		J3ygSwpiWdnfzuZEAdlYgEyyyvY=
+		Axp/N6ToXf1mdyNlVGp/TB5PjlE=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		w8ORpqJPpQwS5uC1yEg3uZFGegY=
+		H0OkO1tj19j2B7WtqrcnZ7FTJn4=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		FCSNPG0PRMeishxNjKD/gPNDAXw=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -35,18 +43,25 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/NVECTASDK.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n21r0UvNIMvB/sF6JcoX/ny0qk+8Lnjld5P2tVhjvnk=
+			</data>
+		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EGWaWKNlQSlyiSDkcZxnwycs0WRzu0N8t6ePiHIGCEI=
+			JnewSUqrzJ5yrXa9rY3ciCHnvCy66yOtNDOwWxagGLo=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hgPbjPQDVeg4CF9S+a9t55n9rHoIsw8JSPDFJi6vnZU=
+			bPHTpUs4H9om0JgMNSTg3F5Gx1fxMgI6kMnfFq+7Ggw=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -60,14 +75,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hgPbjPQDVeg4CF9S+a9t55n9rHoIsw8JSPDFJi6vnZU=
+			bPHTpUs4H9om0JgMNSTg3F5Gx1fxMgI6kMnfFq+7Ggw=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MHL64p/SzJrzsSUMajNIrfAOhkTygR4WTuJJFIURsv4=
+			OVDTXMaasBSH1EzgEbw+rgQuo0XLLseOP38SWTnC7iY=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YAOXrwBlUG/zomA2wF0lYoqpkaVVAng42cQc8x7HmqE=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

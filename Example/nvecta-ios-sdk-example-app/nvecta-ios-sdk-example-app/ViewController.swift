@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import NVECTASDK
+//import notifyvisitors
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad called")
+        NVECTA.shared.show(userToken: nil, customRule: nil)
+        NVECTA.shared.trackScreen(forScreenName: "")
+//        notifyvisitors.show(nil, customRule: nil)
         // Do any additional setup after loading the view.
     }
 

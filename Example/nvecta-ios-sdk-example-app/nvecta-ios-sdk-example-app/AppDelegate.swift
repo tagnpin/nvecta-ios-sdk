@@ -8,6 +8,7 @@
 import UIKit
 import UserNotifications
 import NVECTASDK
+//import notifyvisitors
 
 
 @main
@@ -26,6 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
              nvMode = "live"
         #endif
         
+      //  notifyvisitors.initialize(nvMode)
+       // notifyvisitors.registerPush(withDelegate: self, app: application, launchOptions: launchOptions)
+        
         NVECTA.shared.register(mode: nvMode!)
         
         NVECTA.shared.registerPush(delegate: self, application: application, launchOptions: launchOptions)
@@ -34,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         NVECTA.shared.didRegisterPushToken(application, token: deviceToken)
+       // notifyvisitors.didRegisteredNotification(application, deviceToken: deviceToken)
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: any Error) {
@@ -43,19 +48,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidEnterBackground(_ application: UIApplication) {
         NVECTA.shared.applicationDidEnterBackground(application)
+      //  notifyvisitors.applicationDidEnterBackground(application)
     }
     
     func applicationWillEnterForeground(_ application: UIApplication) {
         NVECTA.shared.applicationWillEnterForeground(application)
+//        notifyvisitors.applicationWillEnterForeground(application)
     }
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         NVECTA.shared.applicationDidBecomeActive(application)
+//        notifyvisitors.applicationDidBecomeActive(application)
     }
     
     func applicationWillTerminate(_ application: UIApplication) {
         NVECTA.shared.applicationWillTerminate(application)
+//        notifyvisitors.applicationWillTerminate()
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        NVECTA.shared.application(app, open: url, options: options)
+        return true
+    }
+    
 
     // MARK: UISceneSession Lifecycle
 
@@ -78,16 +93,23 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         NVECTA.shared.willPresent(notification, completion: completionHandler)
+//        notifyvisitors.willPresent(notification, withCompletionHandler: completionHandler)
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         NVECTA.shared.didReceiveRemoteNotification(userInfo, fetchCompletionHandler: completionHandler)
+//        notifyvisitors.didReceiveRemoteNotification(userInfo, fetchCompletionHandler: completionHandler)
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
         NVECTA.shared.handleNotificationResponse(response, autoRedirect: true) { (pushResponse: NotificationClickResponse?) in
             print("handleNotificationResponse = \(String(describing: pushResponse))")
         }
+        
+//        notifyvisitors.pushNotificationActionData(from: response, autoRedirectOtherApps: true) { (nvPushActionData: NSMutableDictionary?) in
+//            print("nv Push Notification ActionData = \(nvPushActionData ?? [:])")
+//        }
     }
 }
 

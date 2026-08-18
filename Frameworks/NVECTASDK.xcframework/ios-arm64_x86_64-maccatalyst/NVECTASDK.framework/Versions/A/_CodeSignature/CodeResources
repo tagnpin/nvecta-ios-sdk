@@ -15,18 +15,25 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/NVECTASDK.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n21r0UvNIMvB/sF6JcoX/ny0qk+8Lnjld5P2tVhjvnk=
+			</data>
+		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EGWaWKNlQSlyiSDkcZxnwycs0WRzu0N8t6ePiHIGCEI=
+			JnewSUqrzJ5yrXa9rY3ciCHnvCy66yOtNDOwWxagGLo=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ooxt3+yfKcK+n3O+7lxKUbDnpHxR5IEJuIzDoOicB1g=
+			8gN8gQ8sliC887XsyMBcu/u78/UlUqJehgSFWFl111E=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
@@ -40,28 +47,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ooxt3+yfKcK+n3O+7lxKUbDnpHxR5IEJuIzDoOicB1g=
+			8gN8gQ8sliC887XsyMBcu/u78/UlUqJehgSFWFl111E=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x02Sxo2dXJ36qvJN9a19knwurUop6BjABwP4MBSQID0=
+			UNWDf76Md+Tm3Usc5vh46qH9ACqvUy14U2AXO3LklGY=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EGWaWKNlQSlyiSDkcZxnwycs0WRzu0N8t6ePiHIGCEI=
+			JnewSUqrzJ5yrXa9rY3ciCHnvCy66yOtNDOwWxagGLo=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5lXbnYVXQwaXOfSDbKqt1fxKVFI8R8JHuSt2P0Ampro=
+			TelIDGe+kZFq3w5MFANSi01j3MQJkrbqxPpKLPIBydQ=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
@@ -75,14 +82,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5lXbnYVXQwaXOfSDbKqt1fxKVFI8R8JHuSt2P0Ampro=
+			TelIDGe+kZFq3w5MFANSi01j3MQJkrbqxPpKLPIBydQ=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+y3EVso9Gn6DTfwboTGx4Od2SoIe6t3cMqSt9uQzmgM=
+			x0CRllwNeMdujmP2lFpOF8wC1OCAbvsELbv0hxXpNMA=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YAOXrwBlUG/zomA2wF0lYoqpkaVVAng42cQc8x7HmqE=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>

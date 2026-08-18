@@ -4,17 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/NVECTASDK.h</key>
+		<data>
+		8C+AKY5fpksWNlk8Eoapy6UwUfg=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		60uVUTg0pDJr8Ge5xJuNEPc+DZs=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		AG6Tmy3I3sjRaZjdNNRGsDtUUdY=
+		GwVWcSHyczuAhOrftQ6ezC+dDds=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5TEeAAi5Fh3A8nBbL4rb8w4MgL0=
+		vpcOETwhTiViXpplsgsK0lJXi1M=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +26,19 @@
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5TEeAAi5Fh3A8nBbL4rb8w4MgL0=
+		vpcOETwhTiViXpplsgsK0lJXi1M=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ODxndpnm06iIeXQCDLL1oeQe2fo=
+		PaYR+1JxQjOItxh7L8G83ALwalw=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		AG6Tmy3I3sjRaZjdNNRGsDtUUdY=
+		GwVWcSHyczuAhOrftQ6ezC+dDds=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		381D27LTRgBUIXwgLjhF9FMKlYI=
+		n+Pi0hCklNcC7I0dCpMYgDT/GyM=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +46,15 @@
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		381D27LTRgBUIXwgLjhF9FMKlYI=
+		n+Pi0hCklNcC7I0dCpMYgDT/GyM=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		S+blfBCJ3tQfB9u0Lsbjq2ShqU4=
+		bszXS/mXq1GZhA63z2LXKfOn42Q=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		FCSNPG0PRMeishxNjKD/gPNDAXw=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -55,18 +63,25 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/NVECTASDK.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n21r0UvNIMvB/sF6JcoX/ny0qk+8Lnjld5P2tVhjvnk=
+			</data>
+		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EGWaWKNlQSlyiSDkcZxnwycs0WRzu0N8t6ePiHIGCEI=
+			JnewSUqrzJ5yrXa9rY3ciCHnvCy66yOtNDOwWxagGLo=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2LfGC/PJQIDgElbPuqf8ClBdUuue7HyRAL5nCLbWSG0=
+			plOqX362G7mQgi0AqMp4SU1T1vTYbtowXjSQXgAToaI=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -80,28 +95,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2LfGC/PJQIDgElbPuqf8ClBdUuue7HyRAL5nCLbWSG0=
+			plOqX362G7mQgi0AqMp4SU1T1vTYbtowXjSQXgAToaI=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w5xpFITz3OvBl4FgVTVizwi8+US29fYZ6jzE57vt9Po=
+			sKdolgZ/Q437NnJqki8BzUpqNk5WCZl8GSvhE8w8nmM=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EGWaWKNlQSlyiSDkcZxnwycs0WRzu0N8t6ePiHIGCEI=
+			JnewSUqrzJ5yrXa9rY3ciCHnvCy66yOtNDOwWxagGLo=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T/OZHT1mGfJ5wT9W5GRbynm4afwzZH4+qfgoszMhM9Q=
+			BShUgefgjg8J1cksP6WE3G0GO+dSXYdVzDeby2eNKm4=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -115,14 +130,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T/OZHT1mGfJ5wT9W5GRbynm4afwzZH4+qfgoszMhM9Q=
+			BShUgefgjg8J1cksP6WE3G0GO+dSXYdVzDeby2eNKm4=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3N07R4bLCKgEU6KiJ07xlnUUZiFX6BWLjcc36GMss7M=
+			SmPqPrw+AbhEU8tktvzEGWyuGi8lCWVXtDxQFKJhLNA=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YAOXrwBlUG/zomA2wF0lYoqpkaVVAng42cQc8x7HmqE=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

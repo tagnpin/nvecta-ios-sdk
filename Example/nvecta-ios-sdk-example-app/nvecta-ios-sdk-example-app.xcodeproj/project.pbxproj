@@ -15,8 +15,9 @@
 		3555D04C302F36210023F816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3555D042302F36210023F816 /* Main.storyboard */; };
 		3555D077302F40170023F816 /* NotificationServiceExt.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3555D070302F40170023F816 /* NotificationServiceExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3555D083302F40500023F816 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555D080302F40500023F816 /* NotificationService.swift */; };
-		3555D0CA302F696F0023F816 /* NVECTASDK in Frameworks */ = {isa = PBXBuildFile; productRef = 3555D0C9302F696F0023F816 /* NVECTASDK */; };
-		3555D0CC302F696F0023F816 /* notifyvisitorsNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 3555D0CB302F696F0023F816 /* notifyvisitorsNotificationService */; };
+		35624DE530334B4600DE17DA /* testObjCVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35624DE430334B4600DE17DA /* testObjCVCViewController.m */; };
+		35624E053033973300DE17DA /* NVECTASDK in Frameworks */ = {isa = PBXBuildFile; productRef = 35624E043033973300DE17DA /* NVECTASDK */; };
+		35624E073033973300DE17DA /* notifyvisitorsNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 35624E063033973300DE17DA /* notifyvisitorsNotificationService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,9 @@
 		3555D080302F40500023F816 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		3555D089302F42070023F816 /* NotificationServiceExt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationServiceExt.entitlements; sourceTree = "<group>"; };
 		3555D090302F47E10023F816 /* notifyvisitorsNotificationService.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = notifyvisitorsNotificationService.xcframework; path = ../../Frameworks/notifyvisitorsNotificationService.xcframework; sourceTree = "<group>"; };
+		35624DE230334B4600DE17DA /* nvecta-ios-sdk-example-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nvecta-ios-sdk-example-app-Bridging-Header.h"; sourceTree = "<group>"; };
+		35624DE330334B4600DE17DA /* testObjCVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testObjCVCViewController.h; sourceTree = "<group>"; };
+		35624DE430334B4600DE17DA /* testObjCVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testObjCVCViewController.m; sourceTree = "<group>"; };
 		35939CDE302F18C100E751C1 /* nvecta-ios-sdk-example-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nvecta-ios-sdk-example-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -65,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3555D0CC302F696F0023F816 /* notifyvisitorsNotificationService in Frameworks */,
+				35624E073033973300DE17DA /* notifyvisitorsNotificationService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3555D0CA302F696F0023F816 /* NVECTASDK in Frameworks */,
+				35624E053033973300DE17DA /* NVECTASDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +95,9 @@
 				3555D042302F36210023F816 /* Main.storyboard */,
 				3555D043302F36210023F816 /* SceneDelegate.swift */,
 				3555D044302F36210023F816 /* ViewController.swift */,
+				35624DE330334B4600DE17DA /* testObjCVCViewController.h */,
+				35624DE430334B4600DE17DA /* testObjCVCViewController.m */,
+				35624DE230334B4600DE17DA /* nvecta-ios-sdk-example-app-Bridging-Header.h */,
 			);
 			path = "nvecta-ios-sdk-example-app";
 			sourceTree = "<group>";
@@ -150,6 +157,9 @@
 			name = NotificationServiceExt;
 			packageProductDependencies = (
 				3555D0CB302F696F0023F816 /* notifyvisitorsNotificationService */,
+				35CB5E373033194D005AA009 /* notifyvisitorsNotificationService */,
+				35624DE930334BBF00DE17DA /* notifyvisitorsNotificationService */,
+				35624E063033973300DE17DA /* notifyvisitorsNotificationService */,
 			);
 			productName = NotificationServiceExt;
 			productReference = 3555D070302F40170023F816 /* NotificationServiceExt.appex */;
@@ -171,10 +181,12 @@
 			);
 			name = "nvecta-ios-sdk-example-app";
 			packageProductDependencies = (
-				35939D07302F19DC00E751C1 /* NVECTASDK */,
-				3555D017302F204A0023F816 /* NVECTASDK */,
-				3555D0B2302F5BBD0023F816 /* NVECTASDK */,
 				3555D0C9302F696F0023F816 /* NVECTASDK */,
+				35CB5E353033194D005AA009 /* notifyvisitors */,
+				35CB5E393033194D005AA009 /* notifyvisitorsNudges */,
+				35624DE730334BBF00DE17DA /* NVECTASDK */,
+				35624DEB30334BBF00DE17DA /* notifyvisitorsNudges */,
+				35624E043033973300DE17DA /* NVECTASDK */,
 			);
 			productName = "nvecta-ios-sdk-example-app";
 			productReference = 35939CDE302F18C100E751C1 /* nvecta-ios-sdk-example-app.app */;
@@ -195,6 +207,7 @@
 					};
 					35939CDD302F18C100E751C1 = {
 						CreatedOnToolsVersion = 26.3;
+						LastSwiftMigration = 2630;
 					};
 				};
 			};
@@ -208,7 +221,7 @@
 			mainGroup = 35939CD5302F18C100E751C1;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				3555D0C8302F696F0023F816 /* XCLocalSwiftPackageReference "../../../nvecta-ios-sdk" */,
+				35624E033033973300DE17DA /* XCLocalSwiftPackageReference "../../../nvecta-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 35939CDF302F18C100E751C1 /* Products */;
@@ -257,6 +270,7 @@
 				3555D046302F36210023F816 /* AppDelegate.swift in Sources */,
 				3555D047302F36210023F816 /* SceneDelegate.swift in Sources */,
 				3555D048302F36210023F816 /* ViewController.swift in Sources */,
+				35624DE530334B4600DE17DA /* testObjCVCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "nvecta-ios-sdk-example-app/nvecta-ios-sdk-example-app.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +395,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "nvecta-ios-sdk-example-app/nvecta-ios-sdk-example-app-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -391,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "nvecta-ios-sdk-example-app/nvecta-ios-sdk-example-app.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -416,6 +434,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "nvecta-ios-sdk-example-app/nvecta-ios-sdk-example-app-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -576,21 +595,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		3555D0C8302F696F0023F816 /* XCLocalSwiftPackageReference "../../../nvecta-ios-sdk" */ = {
+		35624E033033973300DE17DA /* XCLocalSwiftPackageReference "../../../nvecta-ios-sdk" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = "../../../nvecta-ios-sdk";
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3555D017302F204A0023F816 /* NVECTASDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = NVECTASDK;
-		};
-		3555D0B2302F5BBD0023F816 /* NVECTASDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = NVECTASDK;
-		};
 		3555D0C9302F696F0023F816 /* NVECTASDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NVECTASDK;
@@ -599,9 +610,37 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = notifyvisitorsNotificationService;
 		};
-		35939D07302F19DC00E751C1 /* NVECTASDK */ = {
+		35624DE730334BBF00DE17DA /* NVECTASDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NVECTASDK;
+		};
+		35624DE930334BBF00DE17DA /* notifyvisitorsNotificationService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = notifyvisitorsNotificationService;
+		};
+		35624DEB30334BBF00DE17DA /* notifyvisitorsNudges */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = notifyvisitorsNudges;
+		};
+		35624E043033973300DE17DA /* NVECTASDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NVECTASDK;
+		};
+		35624E063033973300DE17DA /* notifyvisitorsNotificationService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = notifyvisitorsNotificationService;
+		};
+		35CB5E353033194D005AA009 /* notifyvisitors */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = notifyvisitors;
+		};
+		35CB5E373033194D005AA009 /* notifyvisitorsNotificationService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = notifyvisitorsNotificationService;
+		};
+		35CB5E393033194D005AA009 /* notifyvisitorsNudges */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = notifyvisitorsNudges;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

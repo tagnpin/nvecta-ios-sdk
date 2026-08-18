@@ -3,6 +3,7 @@
 // swift-module-flags: -target x86_64-apple-ios15.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NVECTASDK
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Foundation
+@_exported import NVECTASDK
 import Swift
 import UIKit
 import UserNotifications
@@ -41,11 +42,11 @@ public struct AnyCodable : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class NVECTA : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(NVECTASDK) @objcMembers final public class NVECTA : ObjectiveC.NSObject {
   @objc public static let shared: NVECTASDK.NVECTA
-  weak final public var delegate: (any NVECTASDK.NVECTADelegate)? {
-    get
-    set
+  @objc weak final public var delegate: (any NVECTASDK.NVECTADelegate)? {
+    @objc get
+    @objc set
   }
   @objc final public func register(mode: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
@@ -125,27 +126,16 @@ public enum UserError : Swift.Error {
 public struct NotificationClickResponse {
   public let rawData: [Swift.String : Any]
 }
-public protocol NVECTADelegate : AnyObject {
+@objc public protocol NVECTADelegate {
   #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "nvectaDidTrackEventResponse(_:)", message: "Use nvectaDidTrackEventResponse(_:)  instead")
-  func nvectaEventsResponseCallback(_ callback: [Swift.AnyHashable : Any]?)
+  @objc(nvectaEventsResponseCallback:) optional func nvectaEventsResponseCallback(_ callback: [Swift.AnyHashable : Any]?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  func nvectaDidTrackEventResponse(_ response: [Swift.String : Any]?)
+  @objc(nvectaDidTrackEventResponse:) optional func nvectaDidTrackEventResponse(_ response: [Swift.String : Any]?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  func nvectaKnownUserIdentified(_ response: [Swift.String : Any]?)
-  #endif
-}
-extension NVECTASDK.NVECTADelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func nvectaEventsResponseCallback(_ callback: [Swift.AnyHashable : Any]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func nvectaDidTrackEventResponse(_ response: [Swift.String : Any]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func nvectaKnownUserIdentified(_ response: [Swift.String : Any]?)
+  @objc(nvectaKnownUserIdentified:) optional func nvectaKnownUserIdentified(_ response: [Swift.String : Any]?)
   #endif
 }
 @available(iOS 13.0, *)
@@ -156,7 +146,7 @@ extension NVECTASDK.NVECTA {
 }
 extension NVECTASDK.NVECTA {
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc final public func trackEvent(forEventName eventName: Swift.String, attributes: [Swift.String : Any]?, ltv: Swift.String, scope: Swift.Int)
+  @objc final public func trackEvent(forEventName eventName: Swift.String, attributes: [Swift.String : Any]?, ltv: Swift.String?, scope: Swift.Int)
   #endif
   @objc final public func trackScreen(forScreenName screenName: Swift.String)
 }
