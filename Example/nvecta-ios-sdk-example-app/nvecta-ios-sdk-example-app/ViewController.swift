@@ -14,12 +14,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad called")
+        
+        NVECTA.shared.delegate = self
         NVECTA.shared.show(userToken: nil, customRule: nil)
-        NVECTA.shared.trackScreen(forScreenName: "")
+       
+        NVECTA.shared.trackEvent(forEventName: "", attributes: [:], ltv: "", scope: 1)
 //        notifyvisitors.show(nil, customRule: nil)
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        <#code#>
+    }
 
+}
+
+extension ViewController: NVECTADelegate {
+    func nvectaDidTrackEventResponse(_ response: [String : Any]?) {
+        
+    }
+    
 }
 
