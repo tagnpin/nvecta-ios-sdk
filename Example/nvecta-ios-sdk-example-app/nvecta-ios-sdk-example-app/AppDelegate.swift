@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         NVECTA.shared.register(mode: nvMode!)
         
+        
         NVECTA.shared.registerPush(delegate: self, application: application, launchOptions: launchOptions)
         return true
     }
@@ -112,4 +113,3 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 //        }
     }
 }
-

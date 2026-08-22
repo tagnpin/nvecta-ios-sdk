@@ -17,7 +17,7 @@ Ready to get started? [Sign up here](https://console.notifyvisitors.com/console/
 ## 📋 Requirements
 
 - iOS 13.0 or later
-- Xcode 16.0 or later
+- Xcode 26.0 or later
 
 ## 🎉 Installation
 

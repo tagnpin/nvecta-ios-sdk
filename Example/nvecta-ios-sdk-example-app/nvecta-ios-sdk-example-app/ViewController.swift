@@ -7,7 +7,7 @@
 
 import UIKit
 import NVECTASDK
-//import notifyvisitors
+import notifyvisitors
 
 class ViewController: UIViewController {
 
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        <#code#>
+    
     }
 
 }
@@ -32,6 +32,9 @@ class ViewController: UIViewController {
 extension ViewController: NVECTADelegate {
     func nvectaDidTrackEventResponse(_ response: [String : Any]?) {
         
+        notifyvisitors.getNotificationCenterData { (notificationsData: [AnyHashable : Any]?) in
+            print("getNotificationCenterData response data = \(notificationsData ?? [:])")
+        }
     }
     
 }
