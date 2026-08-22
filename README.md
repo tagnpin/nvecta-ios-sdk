@@ -348,12 +348,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 ---
 
-## 🎯 Migration
-
-- [CocoaPods to Swift Package Manager](./Documentation/Migration/CocoaPodsToSPM.md)
-- [Manual XCFramework to Swift Package Manager](./Documentation/Migration/ManualToSPM.md)
-
-<br>
 The SDK is now initialized and ready to use.
 
 ## 📊 What's Next? SDK Features & Guides
@@ -402,7 +396,10 @@ Manage and display user notifications within a centralized in-app notification c
 
 ➡️ [View Notification Center Documentation](./Documentation/Features/NotificationCenter.md)
 
-<br>
+## 🎯 Migration
+
+- [CocoaPods to Swift Package Manager](./Documentation/Migration/CocoaPodsToSPM.md)
+- [Manual XCFramework to Swift Package Manager](./Documentation/Migration/ManualToSPM.md)
 
 ## Troubleshooting
 
