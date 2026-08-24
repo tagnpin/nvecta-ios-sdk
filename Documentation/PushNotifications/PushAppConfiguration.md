@@ -36,7 +36,7 @@ Create an APNs Authentication Key (`.p8`) from your Apple Developer account.
 
 For detailed instructions, refer to:
 
-- [APNs Auth Keys](https://docs.notifyvisitors.com/docs/apns-auth-keys)
+- [APNs Auth Keys](../PushNotifications/APNsConfiguration.md)
 
 ### Upload the APNs Authentication Key
 
