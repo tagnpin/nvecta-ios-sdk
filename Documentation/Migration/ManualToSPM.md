@@ -832,4 +832,6 @@ For new integrations and future SDK development, we recommend using:
 NVECTASDK
 ```
 
-For complete Swift Package Manager installation instructions, see the [Swift Package Manager Installation](../Installation/SwiftPackageManager.md) guide.
+For complete Swift Package Manager installation instructions, see the [Swift Package Manager Installation](../../README.md#recommended-swift-package-manager) guide.
+
+<!-- Recommended: Swift Package Manager -->

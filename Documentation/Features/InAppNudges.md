@@ -47,7 +47,7 @@ Before integrating Native Displays, ensure that:
 
 First you need to install a seprate `notifyvisitorsNudges` SDK into your Main App Target to enable natve display in your app. You can use any one of the following methods:
 
-1. [Swift Package Manager (Recommended)](./Documentation/Installation/SwiftPackageManager.md)
+1. [Swift Package Manager (Recommended)](../../README.md#recommended-swift-package-manager)
 2. [CocoaPods](./Documentation/Installation/CocoaPods.md)
 
 <br>

@@ -1,7 +1,7 @@
 # Manual Installation
 
-| :bulb: We strongly recommend integrate the NVECTASDK / notifyvisitorsn SDK via [Swift Package Manager](../Installation/SwiftPackageManager.md). However, if you are unable to do so you can integrate our `notifyvisitors` SDK manually using the instruction given below. |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :bulb: We strongly recommend integrate the NVECTASDK / notifyvisitorsn SDK via [Swift Package Manager](../../README.md#recommended-swift-package-manager). However, if you are unable to do so you can integrate our `notifyvisitors` SDK manually using the instruction given below. |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 NVECTA iOS SDK can also be integrated manually by adding the distributed `notifyvisitors` XCFramework files directly to an Xcode project.
 
