@@ -1,0 +1,6 @@
+framework module NVECTASDK {
+  umbrella header "NVECTASDK.h"
+  export *
+
+  module * { export * }
+}
