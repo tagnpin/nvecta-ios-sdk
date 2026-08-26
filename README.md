@@ -12,20 +12,131 @@ To learn more, visit our [website](https://www.nvecta.com/) and explore the [doc
 
 Ready to get started? [Sign up here](https://console.notifyvisitors.com/console/account/login) to create your account.
 
-<br>
-
 ## 📋 Requirements
 
 - iOS 13.0 or later
 - Xcode 26.0 or later
+- Use a version of Xcode that supports the Swift Package Manager tools version declared by the package.
+
+  The current package uses:
+
+  ```text
+    Swift Package Manager tools version: 6.2
+  ```
 
 ## 🎉 Installation
 
-NVECTA iOS SDK can be integrated into your application using any of the following methods:
+`NVECTA` iOS SDK can be integrated into your iOS application using `Swift Package Manager`, `CocoaPods`, or `Manual XCFramework` integration.
 
-1. [Swift Package Manager (Recommended)](./Documentation/Installation/SwiftPackageManager.md)
-2. [CocoaPods](./Documentation/Installation/CocoaPods.md)
-3. [Manual Installation](./Documentation/Installation/Manual.md)
+### Recommended: Swift Package Manager
+
+NVECTA iOS SDK is distributed as a binary Swift Package through `Swift Package Manager (SPM)`.
+
+#### 1. Add NVECTA iOS SDK
+
+Open your iOS application in Xcode.
+
+From the Xcode menu, select:
+
+- **File → Add Package Dependencies...**
+
+<p align="center">
+  <img
+    src="./Documentation/Images/spm/spm-add-dependency-page.png"
+    alt="Add Package Dependencies"
+     height="400"
+  />
+</p>
+
+- Enter the NVECTA iOS SDK GitHub repository URL:
+
+  ```text
+      https://github.com/tagnpin/nvecta-ios-sdk
+  ```
+
+    <p align="center">
+      <img
+          src="./Documentation/Images/spm/spm-select-nvecta-dependency.png"
+          alt="Select NVECTA Dependency"
+          height="400"
+      />
+    </p>
+
+- **Assign Packages:** Assign the package as per our recommended configration as shown in the table given below.
+
+    <table>
+    <thead>
+    <tr>
+    <th>Package</th>
+    <th style="text-align: center;">Target</th>
+    <th style="text-align: center;">Required</th>
+    <th style="text-align: center;">Remarks</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><code>NVECTASDK</code></td>
+    <td style="text-align: center;">Main App</td>
+    <td style="text-align: center;">✅</td>
+    <td style="text-align: center;">-</td>
+    </tr>
+    <tr>
+    <td><code>notifyvisitors</code></td>
+    <td style="text-align: center;">  Main App</td>
+    <td style="text-align: center;">Optional</td>
+    <td style="text-align: center;">required only if you are still using <code>notifyvisitors</code></td>
+    </tr>
+    <tr>
+    <td>
+    <code>notifyvisitorsNotificationService</code></td>
+    <td style="text-align: center;">Notification Service Extension</td>
+    <td style="text-align: center;">✅</td>
+    <td style="text-align: center;">-</td>
+    </tr>
+    <tr>
+    <td><code>notifyvisitorsNudges</code></td>
+    <td style="text-align: center;">Main App</td>
+    <td style="text-align: center;">Recommended</td>
+    <td style="text-align: center;"> if you are using inApp-nudges (for exampele: pip video or native display)</td>
+    </tr>
+    </tbody>
+    </table>
+
+    <br>
+
+- Click `Add Package` and ensure that the NVECTA iOS SDK has been added to the appropriate target. Recommended selection configration is shown in the screenshot below.
+
+    <p align="center">
+      <img
+          src="./Documentation/Images/spm/spm-nvecta-sdks-default-target.png"
+          alt="Add NVECTA Dependency to Main Target"
+          height="200"
+      />
+    </p>
+
+<br>
+
+### Other Installation Methods
+
+<details>
+<summary><strong>1. CocoaPods</strong></summary>
+
+[CocoaPods Installation:](./Documentation/Installation/CocoaPods.md) Install `notifyvisitors` iOS SDK using CocoaPods.
+
+</details>
+
+<details>
+<summary><strong>2. Manual Installation</strong></summary>
+
+[Manual Installation:](./Documentation/Installation/Manual.md) Integrate the SDK by manually adding the required XCFrameworks to your project.
+
+</details>
+
+<br>
+
+> **Recommendation:**
+>
+> New integrations should use `Swift Package Manager`. Existing applications using `CocoaPods` or `manual XCFramework` integration are encouraged to migrate to `Swift Package Manager`.
 
 Choose the installation method that best matches your project's dependency management strategy.
 
@@ -45,16 +156,16 @@ Open **Info.plist** and add the following keys.
      	        <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
             <key>CFBundleURLSchemes</key>
              	<array>
-                    <string>YOUR_URL_SCHEME_COMES_HERE</string>
+                    <string>YOUR_CUSTOM_URL_SCHEME_COMES_HERE</string>
                 </array>
      	</dict>
     </array>
 
 <key>nvBrandID</key>
-    <integer>YOUR_BRAND_ID</integer>
+    <integer>YOUR_NVECTA_BRAND_ID</integer>
 
 <key>nvSecretKey</key>
-    <string>YOUR_SECRET_KEY</string>
+    <string>YOUR_NVECTA_BRAND_SECRET_KEY</string>
 
 <key>nvPushCategory</key>
     <string>nvpush</string>
@@ -68,8 +179,8 @@ Open **Info.plist** and add the following keys.
 | Key                     | Type    | Description                                                   |
 | ----------------------- | ------- | ------------------------------------------------------------- |
 | `CFBundleURLTypes`      | Array   | Configures the custom URL scheme used for deep-link handling. |
-| `nvBrandID`             | Number  | Your NVECTA Brand ID                                          |
-| `nvSecretKey`           | String  | Your NVECTA Secret Key                                        |
+| `nvBrandID`             | Number  | Your NVECTA `BrandID`                                         |
+| `nvSecretKey`           | String  | Your NVECTA `Secret Key`                                      |
 | `nvPushCategory`        | String  | Push NVECTA category. Use the default value: `nvpush`.        |
 | `nvViewAutoRedirection` | Boolean | Enables automatic view redirection when configured properly.  |
 
@@ -79,7 +190,25 @@ Open **Info.plist** and add the following keys.
 
 > **Important**
 >
-> Replace the sample values above with your actual Brand ID and Secret Key available from the NVECTA Dashboard.
+> **Replace** the `YOUR_NVECTA_BRAND_ID` and `YOUR_NVECTA_BRAND_SECRET_KEY` values above with your actual `BrandID` and `Encryption Key` available from your `NVECTA` Dashboard.
+
+<br>
+
+## 🔑 Where can I find my `BrandID` and `Encryption Key`?
+
+Replace `YOUR_NVECTA_BRAND_ID` and `YOUR_NVECTA_BRAND_SECRET_KEY` with your actual NVECTA credentials.
+
+You can obtain these credentials in one of the following ways:
+
+- Retrieve them yourself from the **NVECTA Dashboard**.
+
+**📍 NVECTA Dashboard**  
+https://console.notifyvisitors.com/brand/admin/integration_javaScriptCode?active_tab=direct_integration
+
+**📖 Detailed Guide**  
+https://support.nvecta.com/support/solutions/articles/84000395836-how-to-get-brand-id-encryption-key-and-api-keys-in-nvecta
+
+<br>
 
 ---
 
@@ -348,7 +477,45 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 ---
 
+<br>
+
 The SDK is now initialized and ready to use.
+
+## Integration Verification
+
+After completing the integration, verify the `NVECTA iOS SDK` initialization from Xcode console logs. Build and run your iOS app from Xcode and check the logs in Xcode console.
+
+Filter logs using our SDK tag:
+
+```text
+[notifyvisitors]
+```
+
+Example successful initialization logs:
+
+```text
+[notifyvisitors]-[INFO]: You are in debug mode
+[notifyvisitors]-[INFO]: BrandID >>>>======>>>>> 123XX
+[notifyvisitors]-[INFO]: Inside, write inAppBanner/Survey settings data finished.
+```
+
+## Recommended Checks
+
+Verify the following after app launch:
+
+- SDK initializes without errors
+- Your actuak `BrandID` printed in logs successfully
+- No crash appears in logs.
+
+## Validation
+
+After completing the integration, verify that the SDK is successfully communicating with `NVECTA`.
+
+Follow the **[Integration Code and Event Validation](https://support.nvecta.com/support/solutions/articles/84000399408-integration-code-and-event-validation)** guide to confirm that:
+
+- App sessions are visible in the `NVECTA` dashboard.
+- Events are being received successfully.
+- The SDK integration has been completed correctly.
 
 ## 📊 What's Next? SDK Features & Guides
 
@@ -404,3 +571,11 @@ Manage and display user notifications within a centralized in-app notification c
 ## Troubleshooting
 
 - [Common Issues](./Documentation/Troubleshooting/CommonIssues.md)
+
+## 🆕 Changelog
+
+Refer to the NVECTA iOS SDK [Change Log](CHANGELOG.md).
+
+## ❓Questions
+
+Need help? Contact the `NVECTA` support team directly from the `NVECTA` Dashboard for assistance with integration, configuration, or troubleshooting.

@@ -36,7 +36,7 @@ Create an APNs Authentication Key (`.p8`) from your Apple Developer account.
 
 For detailed instructions, refer to:
 
-- [APNs Auth Keys](../PushNotifications/APNsConfiguration.md)
+- [APNs Auth Keys](https://www.nvecta.com/docs/apns-auth-keys)
 
 ### Upload the APNs Authentication Key
 
@@ -285,6 +285,9 @@ After completing the configuration:
 - Confirm that the device is successfully registered with APNs.
 - Send a test push notification from the NVECTA Dashboard.
 - Verify that notifications are received on the device.
+- [**Validate push**](https://support.nvecta.com/support/solutions/articles/84000399426-test-push-notifications) registration, push delivery, and click tracking are working correctly by sending a test push notification
+
+<br>
 
 If Rich Notifications are configured, verify that images, action buttons, and delivery tracking work as expected.
 

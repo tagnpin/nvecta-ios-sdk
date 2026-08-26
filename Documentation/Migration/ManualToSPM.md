@@ -808,11 +808,11 @@ Duplicate SDK binaries can result in:
 
 ---
 
-### Alternative: SPM + myObjcCoreSDK
+### Alternative: SPM + notifyvisitors
 
 - [ ] Old NVECTA XCFrameworks removed.
 - [ ] NVECTA SPM package added.
-- [ ] `myObjcCoreSDK` added to the main application target.
+- [ ] `notifyvisitors` added to the main application target.
 - [ ] Existing Objective-C imports retained.
 - [ ] Existing SDK API calls retained.
 - [ ] Notification Service Extension dependency migrated if applicable.

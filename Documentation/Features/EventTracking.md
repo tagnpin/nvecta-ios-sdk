@@ -407,6 +407,20 @@ The SDK returns different response messages and type codes based on event tracki
 
 > **Type:** Identifies the internal SDK component or processing stage where the callback originated. Primarily intended for debugging and troubleshooting SDK-level errors.
 
+## Verify Event Tracking
+
+After the callback confirms that the event was successfully tracked, verify that the event is also received and processed by `NVECTA`.
+
+Follow the **[Integration Code and Event Validation](https://www.nvecta.com/support/solutions/articles/84000399408-integration-code-and-event-validation)** guide to verify that:
+
+- App sessions are visible in the NVECTA dashboard.
+- Events are received successfully.
+- Event attributes are captured correctly.
+
+## Troubleshooting
+
+If events appear in Logcat but are not visible in the NVECTA dashboard, refer to the **[Troubleshoot Event Tracking](https://www.nvecta.com/support/solutions/articles/84000389021-troubleshoot-event-tracking)** guide for common causes and resolution steps.
+
 <br>
 
 # Best Practices

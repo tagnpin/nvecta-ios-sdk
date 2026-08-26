@@ -62,6 +62,22 @@ In some cases, you may want more control over screen tracking, especially when:
 - You want to track specific sub-views within a single Activity or Fragment.
 - You want to override the automatically logged screen name with a custom identifier.
 
+<br>
+
+> [!NOTE]
+> **Automatic screen tracking is enabled by default.**
+>
+> If you want to manually control all screen tracking events, disable automatic screen tracking by adding the following `boolean` key and set it's value to fasle inside your application's `info.plist` file:
+>
+> ```xml
+> <key>nvAutoScreenTracking</key>
+>    <false/>
+> ```
+>
+> Once disabled, the SDK will no longer automatically log screen views. You must explicitly call `trackScreen()` whenever you want to record a screen view.
+
+Notice that the value should be false, not true, because you're describing how to stop automatic tracking. If the value is true, automatic tracking remains enabled.
+
 #### The Basic Function
 
 #### Swift
@@ -78,6 +94,8 @@ NVECTA.shared.trackScreen(forScreenName: "YOUR_SCREEN_NAME")
 ```
 
 </details>
+
+<br>
 
 This one line of code tells the SDK: _"User is now on 'ScreenName'"_
 

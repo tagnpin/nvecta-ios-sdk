@@ -42,10 +42,95 @@ Further steps are defined below in detail to complete this setup.
 
 ### Install Notification Service SDK
 
-Same as we did in main target you can install our Notifiation Service extension SDK into your application's `Notification Service Extension` target using any of the following methods:
+The `notifyvisitorsNotificationService` SDK is required to process rich media and other notification content inside the `Notification Service Extension`.
 
-1. [Swift Package Manager (Recommended)](./Documentation/Installation/SwiftPackageManager.md)
-2. [CocoaPods](./Documentation/Installation/CocoaPods.md)
+The SDK can be integrated using:
+
+- **Swift Package Manager (Recommended)**
+- **CocoaPods**
+
+> **Important:** `notifyvisitorsNotificationService` must be added to the **Notification Service Extension target**. It should not be added to the main application target unless specifically required by your project configuration.
+
+### 2.1 Swift Package Manager
+
+#### Add the Package
+
+1.  Open your iOS project in Xcode.
+2.  Select **File → Add Package Dependencies...**
+<p align="center">
+<img
+src="../Images/spm/spm-add-dependency-page.png"
+alt="Add Package Dependencies"
+ height="400"
+/>
+</p>
+
+3.  Enter the NVECTA iOS SDK Swift Package repository URL.
+
+    ```text
+        https://github.com/tagnpin/nvecta-ios-sdk
+    ```
+
+    <p align="center">
+        <img
+          src="../Images/spm/spm-select-nvecta-dependency.png"
+          alt="Select NVECTA Dependency"
+          height="400"
+        />
+    </p>
+
+4.  **Assign Package:** Assign the `notifyvisitorsNotificationService` package to the **Notification Service Extension target** as shown in the table given below.
+
+    <table>
+
+    <thead>
+    <tr>
+    <th>Package</th>
+    <th style="text-align: center;">Target</th>
+    <th style="text-align: center;">Required</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>
+    <code>notifyvisitorsNotificationService</code></td>
+    <td style="text-align: center;">Notification Service Extension</td>
+    <td style="text-align: center;">✅</td>
+    </tr>
+    </tbody>
+    </table>
+
+5.  Click `Add Package` and ensure that the `notifyvisitorsNotificationService` iOS SDK has been added to **Notification Service Extension target**
+
+    <p align="center">
+    <img 
+     src="../Images/spm/spm-nvecta-sdks-nse-target.png"
+     alt="Add NVECTA Dependency to Notification Service Extension Target"
+     height="200"
+    />
+    </p>
+
+<br>
+
+#### Add `notifyvisitorsNotificationService` to the `Notification Service Extension` Target
+
+After the package has been added:
+
+1. Select your project in the **Project Navigator**.
+2. Select the **Notification Service Extension** target.
+3. Open the **General** tab.
+4. Under **Frameworks, Libraries, and Embedded Content**, add `notifyvisitorsNotificationService`.
+5. Make sure the framework is associated with the **Notification Service Extension target**.
+
+> **Important:** Do not add `notifyvisitorsNotificationService` to the main application target unless your project specifically requires it.
+
+### 2.2 CocoaPods
+
+For CocoaPods integration, refer to:
+
+[CocoaPods Installation](./NSECocoaPods.md)
+
+Make sure the `notifyvisitorsNotificationService` dependency is configured for the Notification Service Extension target.
 
 ### Import Notification Service SDK
 
@@ -180,12 +265,6 @@ Let's set up `AppGroups` in your app to count push deliveries in your NVECTA pan
 <key>nvAppGroupKey</key>
     <string>group.{Your App Bundle Identifier}.NVECTA</string>
 ```
-
-### OR
-
-You can simply open the `info.plist`, add a new row, and define a `nvAppGroupKey` as a `String` with a value of `group.{your app bundle identifier}.NVECTA`
-
-![Notification Service Extension Custom AppGroup ID](../Images/notification-service-ext/nse-info-plist-custom-app-group-id.png)
 
 **6.3.** Repeat `step 6.2` for the `info.plist` file in your `Notification Service Extension` Target project folder and enter the exact same key and values as in `step 6.2`.
 
