@@ -291,6 +291,10 @@ After completing the configuration:
 
 If Rich Notifications are configured, verify that images, action buttons, and delivery tracking work as expected.
 
+## Troubleshooting
+
+- [Common Issues](../Troubleshooting/CommonIssues.md#push-notifications)
+
 # Support
 
 If you encounter any issues during integration:
