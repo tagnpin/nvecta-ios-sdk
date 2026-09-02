@@ -1,0 +1,63 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target x86_64-apple-ios26.2-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NVECTAAdTrackingSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+import AdSupport
+import AppTrackingTransparency
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public enum NVECTATrackingLogLevel : Swift.Int {
+  case none = -1
+  case error = 0
+  case warning = 1
+  case info = 2
+  case debug = 3
+  case verbose = 4
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class NVECTAAdTrackingManager : ObjectiveC.NSObject {
+  @objc public static let shared: NVECTAAdTrackingSDK.NVECTAAdTrackingManager
+  @objc final public let configuration: NVECTAAdTrackingSDK.NVECTAAdTrackingConfiguration
+  @objc final public func start()
+  @objc final public func syncTrackingStatus()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func requestTrackingAuthorization(completion: ((NVECTAAdTrackingSDK.NVECTATrackingAuthorizationStatus) -> Swift.Void)? = nil)
+  #endif
+  @objc deinit
+}
+@objc public enum NVECTATrackingAuthorizationStatus : Swift.Int {
+  case notDetermined
+  case restricted
+  case denied
+  case authorized
+  case unsupported
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class NVECTAAdTrackingConfiguration : ObjectiveC.NSObject {
+  @objc final public var enableAutomaticATTRequest: Swift.Bool
+  @objc final public var authorizationTimeout: Swift.Double
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension NVECTAAdTrackingSDK.NVECTATrackingLogLevel : Swift.Equatable {}
+extension NVECTAAdTrackingSDK.NVECTATrackingLogLevel : Swift.Hashable {}
+extension NVECTAAdTrackingSDK.NVECTATrackingLogLevel : Swift.RawRepresentable {}
+extension NVECTAAdTrackingSDK.NVECTATrackingAuthorizationStatus : Swift.Equatable {}
+extension NVECTAAdTrackingSDK.NVECTATrackingAuthorizationStatus : Swift.Hashable {}
+extension NVECTAAdTrackingSDK.NVECTATrackingAuthorizationStatus : Swift.RawRepresentable {}

@@ -40,6 +40,23 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NVECTASDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "notifyvisitors",
+        "printedName": "notifyvisitors",
+        "declKind": "Import",
+        "moduleName": "NVECTASDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -228,6 +245,2171 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NVECTASDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NVECTACenterStyleConfig",
+        "printedName": "NVECTACenterStyleConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "firstTabLabel",
+            "printedName": "firstTabLabel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC13firstTabLabelSSSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC13firstTabLabelSSSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC13firstTabLabelSSSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC13firstTabLabelSSSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC13firstTabLabelSSSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC13firstTabLabelSSSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC13firstTabLabelSSSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC13firstTabLabelSSSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "firstTabDisplayName",
+            "printedName": "firstTabDisplayName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC19firstTabDisplayNameSSSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC19firstTabDisplayNameSSSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC19firstTabDisplayNameSSSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC19firstTabDisplayNameSSSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC19firstTabDisplayNameSSSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC19firstTabDisplayNameSSSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC19firstTabDisplayNameSSSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC19firstTabDisplayNameSSSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "secondTabLabel",
+            "printedName": "secondTabLabel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC14secondTabLabelSSSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC14secondTabLabelSSSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC14secondTabLabelSSSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC14secondTabLabelSSSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC14secondTabLabelSSSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC14secondTabLabelSSSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC14secondTabLabelSSSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC14secondTabLabelSSSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "secondTabDisplayName",
+            "printedName": "secondTabDisplayName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC20secondTabDisplayNameSSSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC20secondTabDisplayNameSSSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC20secondTabDisplayNameSSSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC20secondTabDisplayNameSSSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC20secondTabDisplayNameSSSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC20secondTabDisplayNameSSSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC20secondTabDisplayNameSSSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC20secondTabDisplayNameSSSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "thirdTabLabel",
+            "printedName": "thirdTabLabel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC13thirdTabLabelSSSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC13thirdTabLabelSSSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC13thirdTabLabelSSSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC13thirdTabLabelSSSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC13thirdTabLabelSSSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC13thirdTabLabelSSSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC13thirdTabLabelSSSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC13thirdTabLabelSSSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "thirdTabDisplayName",
+            "printedName": "thirdTabDisplayName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC19thirdTabDisplayNameSSSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC19thirdTabDisplayNameSSSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC19thirdTabDisplayNameSSSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC19thirdTabDisplayNameSSSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC19thirdTabDisplayNameSSSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC19thirdTabDisplayNameSSSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC19thirdTabDisplayNameSSSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC19thirdTabDisplayNameSSSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unselectedTabTextColor",
+            "printedName": "unselectedTabTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC22unselectedTabTextColorSo7UIColorCSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC22unselectedTabTextColorSo7UIColorCSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC22unselectedTabTextColorSo7UIColorCSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC22unselectedTabTextColorSo7UIColorCSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC22unselectedTabTextColorSo7UIColorCSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC22unselectedTabTextColorSo7UIColorCSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC22unselectedTabTextColorSo7UIColorCSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC22unselectedTabTextColorSo7UIColorCSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "selectedTabTextColor",
+            "printedName": "selectedTabTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC20selectedTabTextColorSo7UIColorCSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC20selectedTabTextColorSo7UIColorCSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC20selectedTabTextColorSo7UIColorCSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC20selectedTabTextColorSo7UIColorCSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC20selectedTabTextColorSo7UIColorCSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC20selectedTabTextColorSo7UIColorCSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC20selectedTabTextColorSo7UIColorCSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC20selectedTabTextColorSo7UIColorCSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "selectedTabBackgroundColor",
+            "printedName": "selectedTabBackgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC26selectedTabBackgroundColorSo7UIColorCSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC26selectedTabBackgroundColorSo7UIColorCSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC26selectedTabBackgroundColorSo7UIColorCSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC26selectedTabBackgroundColorSo7UIColorCSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC26selectedTabBackgroundColorSo7UIColorCSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC26selectedTabBackgroundColorSo7UIColorCSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC26selectedTabBackgroundColorSo7UIColorCSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC26selectedTabBackgroundColorSo7UIColorCSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unselectedTabBackgroundColor",
+            "printedName": "unselectedTabBackgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC28unselectedTabBackgroundColorSo7UIColorCSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC28unselectedTabBackgroundColorSo7UIColorCSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC28unselectedTabBackgroundColorSo7UIColorCSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC28unselectedTabBackgroundColorSo7UIColorCSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC28unselectedTabBackgroundColorSo7UIColorCSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC28unselectedTabBackgroundColorSo7UIColorCSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC28unselectedTabBackgroundColorSo7UIColorCSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC28unselectedTabBackgroundColorSo7UIColorCSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "selectedTabIndex",
+            "printedName": "selectedTabIndex",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC16selectedTabIndexSivp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC16selectedTabIndexSivp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC16selectedTabIndexSivg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC16selectedTabIndexSivg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC16selectedTabIndexSivs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC16selectedTabIndexSivs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC16selectedTabIndexSivM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC16selectedTabIndexSivM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tabTextFont",
+            "printedName": "tabTextFont",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIFont?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC11tabTextFontSo6UIFontCSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC11tabTextFontSo6UIFontCSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIFont?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIFont",
+                        "printedName": "UIKit.UIFont",
+                        "usr": "c:objc(cs)UIFont"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC11tabTextFontSo6UIFontCSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC11tabTextFontSo6UIFontCSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIFont?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIFont",
+                        "printedName": "UIKit.UIFont",
+                        "usr": "c:objc(cs)UIFont"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC11tabTextFontSo6UIFontCSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC11tabTextFontSo6UIFontCSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC11tabTextFontSo6UIFontCSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC11tabTextFontSo6UIFontCSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tabBadgeCountBorderColor",
+            "printedName": "tabBadgeCountBorderColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC24tabBadgeCountBorderColorSo7UIColorCSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC24tabBadgeCountBorderColorSo7UIColorCSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC24tabBadgeCountBorderColorSo7UIColorCSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC24tabBadgeCountBorderColorSo7UIColorCSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC24tabBadgeCountBorderColorSo7UIColorCSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC24tabBadgeCountBorderColorSo7UIColorCSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC24tabBadgeCountBorderColorSo7UIColorCSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC24tabBadgeCountBorderColorSo7UIColorCSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tabBadgeCountFillColor",
+            "printedName": "tabBadgeCountFillColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountFillColorSo7UIColorCSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountFillColorSo7UIColorCSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountFillColorSo7UIColorCSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountFillColorSo7UIColorCSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountFillColorSo7UIColorCSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountFillColorSo7UIColorCSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountFillColorSo7UIColorCSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountFillColorSo7UIColorCSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tabBadgeCountTextColor",
+            "printedName": "tabBadgeCountTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountTextColorSo7UIColorCSgvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountTextColorSo7UIColorCSgvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountTextColorSo7UIColorCSgvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountTextColorSo7UIColorCSgvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountTextColorSo7UIColorCSgvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountTextColorSo7UIColorCSgvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountTextColorSo7UIColorCSgvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC22tabBadgeCountTextColorSo7UIColorCSgvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldTabBadgeShine",
+            "printedName": "shouldTabBadgeShine",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC19shouldTabBadgeShineSbvp",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC19shouldTabBadgeShineSbvp",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC19shouldTabBadgeShineSbvg",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC19shouldTabBadgeShineSbvg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC19shouldTabBadgeShineSbvs",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC19shouldTabBadgeShineSbvs",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC19shouldTabBadgeShineSbvM",
+                "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC19shouldTabBadgeShineSbvM",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(unselectedTabTextColor:selectedTabTextColor:selectedTabBackgroundColor:unselectedTabBackgroundColor:selectedTabIndex:tabTextFont:tabBadgeCountBorderColor:tabBadgeCountFillColor:tabBadgeCountTextColor:shouldTabBadgeShine:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NVECTACenterStyleConfig",
+                "printedName": "NVECTASDK.NVECTACenterStyleConfig",
+                "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIFont?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC22unselectedTabTextColor08selectedfgH00if10BackgroundH00efjH00iF5Index03tabG4Font0l16BadgeCountBorderH00lno4FillH00lnogH006shouldfN5ShineACSo7UIColorCSg_A3PSiSo6UIFontCSgA3PSbtcfc",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC22unselectedTabTextColor08selectedfgH00if10BackgroundH00efjH00iF5Index03tabG4Font0l16BadgeCountBorderH00lno4FillH00lnogH006shouldfN5ShineACSo7UIColorCSg_A3PSiSo6UIFontCSgA3PSbtcfc",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setFirstTab",
+            "printedName": "setFirstTab(label:displayName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC11setFirstTab5label11displayNameySS_SStF",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC11setFirstTab5label11displayNameySS_SStF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSecondTab",
+            "printedName": "setSecondTab(label:displayName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC12setSecondTab5label11displayNameySS_SStF",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC12setSecondTab5label11displayNameySS_SStF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setThirdTab",
+            "printedName": "setThirdTab(label:displayName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC11setThirdTab5label11displayNameySS_SStF",
+            "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC11setThirdTab5label11displayNameySS_SStF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC",
+        "mangledName": "$s9NVECTASDK23NVECTACenterStyleConfigC",
+        "moduleName": "NVECTASDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -413,6 +2595,412 @@
         "moduleName": "NVECTASDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NVECTASDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NVECTASDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NVECTASDKLogLevel",
+        "printedName": "NVECTASDKLogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NVECTASDK.NVECTASDKLogLevel.Type) -> NVECTASDK.NVECTASDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVECTASDKLogLevel",
+                    "printedName": "NVECTASDK.NVECTASDKLogLevel",
+                    "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NVECTASDK.NVECTASDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NVECTASDKLogLevel",
+                        "printedName": "NVECTASDK.NVECTASDKLogLevel",
+                        "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel@NVECTASDKLogLevelNone",
+            "mangledName": "$s9NVECTASDK17NVECTASDKLogLevelO4noneyA2CmF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NVECTASDK.NVECTASDKLogLevel.Type) -> NVECTASDK.NVECTASDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVECTASDKLogLevel",
+                    "printedName": "NVECTASDK.NVECTASDKLogLevel",
+                    "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NVECTASDK.NVECTASDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NVECTASDKLogLevel",
+                        "printedName": "NVECTASDK.NVECTASDKLogLevel",
+                        "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel@NVECTASDKLogLevelError",
+            "mangledName": "$s9NVECTASDK17NVECTASDKLogLevelO5erroryA2CmF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "warning",
+            "printedName": "warning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NVECTASDK.NVECTASDKLogLevel.Type) -> NVECTASDK.NVECTASDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVECTASDKLogLevel",
+                    "printedName": "NVECTASDK.NVECTASDKLogLevel",
+                    "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NVECTASDK.NVECTASDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NVECTASDKLogLevel",
+                        "printedName": "NVECTASDK.NVECTASDKLogLevel",
+                        "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel@NVECTASDKLogLevelWarning",
+            "mangledName": "$s9NVECTASDK17NVECTASDKLogLevelO7warningyA2CmF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NVECTASDK.NVECTASDKLogLevel.Type) -> NVECTASDK.NVECTASDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVECTASDKLogLevel",
+                    "printedName": "NVECTASDK.NVECTASDKLogLevel",
+                    "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NVECTASDK.NVECTASDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NVECTASDKLogLevel",
+                        "printedName": "NVECTASDK.NVECTASDKLogLevel",
+                        "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel@NVECTASDKLogLevelInfo",
+            "mangledName": "$s9NVECTASDK17NVECTASDKLogLevelO4infoyA2CmF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NVECTASDK.NVECTASDKLogLevel.Type) -> NVECTASDK.NVECTASDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVECTASDKLogLevel",
+                    "printedName": "NVECTASDK.NVECTASDKLogLevel",
+                    "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NVECTASDK.NVECTASDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NVECTASDKLogLevel",
+                        "printedName": "NVECTASDK.NVECTASDKLogLevel",
+                        "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel@NVECTASDKLogLevelDebug",
+            "mangledName": "$s9NVECTASDK17NVECTASDKLogLevelO5debugyA2CmF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "verbose",
+            "printedName": "verbose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NVECTASDK.NVECTASDKLogLevel.Type) -> NVECTASDK.NVECTASDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVECTASDKLogLevel",
+                    "printedName": "NVECTASDK.NVECTASDKLogLevel",
+                    "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NVECTASDK.NVECTASDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NVECTASDKLogLevel",
+                        "printedName": "NVECTASDK.NVECTASDKLogLevel",
+                        "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel@NVECTASDKLogLevelVerbose",
+            "mangledName": "$s9NVECTASDK17NVECTASDKLogLevelO7verboseyA2CmF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NVECTASDK.NVECTASDKLogLevel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVECTASDKLogLevel",
+                    "printedName": "NVECTASDK.NVECTASDKLogLevel",
+                    "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9NVECTASDK17NVECTASDKLogLevelO8rawValueACSgSi_tcfc",
+            "mangledName": "$s9NVECTASDK17NVECTASDKLogLevelO8rawValueACSgSi_tcfc",
+            "moduleName": "NVECTASDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK17NVECTASDKLogLevelO8rawValueSivp",
+            "mangledName": "$s9NVECTASDK17NVECTASDKLogLevelO8rawValueSivp",
+            "moduleName": "NVECTASDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK17NVECTASDKLogLevelO8rawValueSivg",
+                "mangledName": "$s9NVECTASDK17NVECTASDKLogLevelO8rawValueSivg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NVECTASDK@E@NVECTASDKLogLevel",
+        "mangledName": "$s9NVECTASDK17NVECTASDKLogLevelO",
+        "moduleName": "NVECTASDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
         ]
       },
       {
@@ -735,6 +3323,28 @@
           },
           {
             "kind": "Function",
+            "name": "requestAppleAppStoreInAppReview",
+            "printedName": "requestAppleAppStoreInAppReview()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NVECTASDK@objc(cs)NVECTASDK(im)requestAppleAppStoreInAppReview",
+            "mangledName": "$s9NVECTASDK6NVECTAC022requestAppleAppStoreInE6ReviewyyF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "show",
             "printedName": "show(userToken:customRule:)",
             "children": [
@@ -932,6 +3542,78 @@
             "declAttributes": [
               "Final",
               "DiscardableResult",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openUrlGetData",
+            "printedName": "openUrlGetData(withApplication:url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIApplication?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIApplication",
+                    "printedName": "UIKit.UIApplication",
+                    "usr": "c:objc(cs)UIApplication"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)openUrlGetDataWithApplication:url:",
+            "mangledName": "$s9NVECTASDK6NVECTAC14openUrlGetData15withApplication3urlSDys11AnyHashableVypGSgSo13UIApplicationCSg_10Foundation3URLVSgtF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final",
               "ObjC"
             ],
             "isFromExtension": true,
@@ -1626,6 +4308,214 @@
           },
           {
             "kind": "Function",
+            "name": "notificationCenter",
+            "printedName": "notificationCenter()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)notificationCenter",
+            "mangledName": "$s9NVECTASDK6NVECTAC18notificationCenteryyF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notificationCenter",
+            "printedName": "notificationCenter(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NVECTASDK.NVECTACenterStyleConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVECTACenterStyleConfig",
+                    "printedName": "NVECTASDK.NVECTACenterStyleConfig",
+                    "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NVECTASDK6NVECTAC18notificationCenter4withyAA23NVECTACenterStyleConfigCSg_tF",
+            "mangledName": "$s9NVECTASDK6NVECTAC18notificationCenter4withyAA23NVECTACenterStyleConfigCSg_tF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getNotificationCenterData",
+            "printedName": "getNotificationCenterData(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String : Any]?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.String : Any]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)getNotificationCenterData:",
+            "mangledName": "$s9NVECTASDK6NVECTAC25getNotificationCenterDatayyySDySSypGSgcSgF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getNotificationCenterCount",
+            "printedName": "getNotificationCenterCount(with:countResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NVECTASDK.NVECTACenterStyleConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVECTACenterStyleConfig",
+                    "printedName": "NVECTASDK.NVECTACenterStyleConfig",
+                    "usr": "s:9NVECTASDK23NVECTACenterStyleConfigC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.AnyHashable : Any]?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.AnyHashable : Any]?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.AnyHashable : Any]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.AnyHashable : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AnyHashable",
+                                "printedName": "Swift.AnyHashable",
+                                "usr": "s:s11AnyHashableV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NVECTASDK6NVECTAC26getNotificationCenterCount4with11countResultyAA23NVECTACenterStyleConfigCSg_ySDys11AnyHashableVypGSgcSgtF",
+            "mangledName": "$s9NVECTASDK6NVECTAC26getNotificationCenterCount4with11countResultyAA23NVECTACenterStyleConfigCSg_ySDys11AnyHashableVypGSgcSgtF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "userIdentifier",
             "printedName": "userIdentifier(WithUserID:userParams:)",
             "children": [
@@ -2104,6 +4994,130 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "globalAttributesPersistenceOptions",
+            "printedName": "globalAttributesPersistenceOptions(_:expiryInDays:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NVECTAGlobalAttributePersistenceType",
+                "printedName": "NVECTASDK.NVECTAGlobalAttributePersistenceType",
+                "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NVECTASDK6NVECTAC34globalAttributesPersistenceOptions_12expiryInDaysyAA021NVECTAGlobalAttributeE4TypeO_SitF",
+            "mangledName": "$s9NVECTASDK6NVECTAC34globalAttributesPersistenceOptions_12expiryInDaysyAA021NVECTAGlobalAttributeE4TypeO_SitF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setGlobalAttributes",
+            "printedName": "setGlobalAttributes(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)setGlobalAttributes:",
+            "mangledName": "$s9NVECTASDK6NVECTAC19setGlobalAttributesyySDySSypGF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeGlobalAttribute",
+            "printedName": "removeGlobalAttribute(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)removeGlobalAttributeForKey:",
+            "mangledName": "$s9NVECTASDK6NVECTAC21removeGlobalAttribute6forKeyySS_tF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearGlobalAttributes",
+            "printedName": "clearGlobalAttributes()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NVECTASDK@objc(cs)NVECTASDK(im)clearGlobalAttributes",
+            "mangledName": "$s9NVECTASDK6NVECTAC21clearGlobalAttributesyyF",
+            "moduleName": "NVECTASDK",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2242,6 +5256,16 @@
         "printedName": "notifyvisitors",
         "declKind": "Import",
         "moduleName": "NVECTASDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NVECTASDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -3820,6 +6844,59 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nvectaNudgeUiFinalized",
+            "printedName": "nvectaNudgeUiFinalized(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NVECTASDK@objc(pl)NVECTADelegate(im)nvectaNudgeUiFinalized:",
+            "mangledName": "$s9NVECTASDK14NVECTADelegateP22nvectaNudgeUiFinalizedyySDySSypGSgF",
+            "moduleName": "NVECTASDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NVECTASDK.NVECTADelegate>",
+            "sugared_genericSig": "<Self where Self : NVECTASDK.NVECTADelegate>",
+            "protocolReq": true,
+            "objc_name": "nvectaNudgeUiFinalized:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -3885,6 +6962,257 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "NVECTASDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NVECTAGlobalAttributePersistenceType",
+        "printedName": "NVECTAGlobalAttributePersistenceType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "memory",
+            "printedName": "memory",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NVECTASDK.NVECTAGlobalAttributePersistenceType.Type) -> NVECTASDK.NVECTAGlobalAttributePersistenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVECTAGlobalAttributePersistenceType",
+                    "printedName": "NVECTASDK.NVECTAGlobalAttributePersistenceType",
+                    "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NVECTASDK.NVECTAGlobalAttributePersistenceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NVECTAGlobalAttributePersistenceType",
+                        "printedName": "NVECTASDK.NVECTAGlobalAttributePersistenceType",
+                        "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO6memoryyA2CmF",
+            "mangledName": "$s9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO6memoryyA2CmF",
+            "moduleName": "NVECTASDK"
+          },
+          {
+            "kind": "Var",
+            "name": "session",
+            "printedName": "session",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NVECTASDK.NVECTAGlobalAttributePersistenceType.Type) -> NVECTASDK.NVECTAGlobalAttributePersistenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVECTAGlobalAttributePersistenceType",
+                    "printedName": "NVECTASDK.NVECTAGlobalAttributePersistenceType",
+                    "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NVECTASDK.NVECTAGlobalAttributePersistenceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NVECTAGlobalAttributePersistenceType",
+                        "printedName": "NVECTASDK.NVECTAGlobalAttributePersistenceType",
+                        "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO7sessionyA2CmF",
+            "mangledName": "$s9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO7sessionyA2CmF",
+            "moduleName": "NVECTASDK"
+          },
+          {
+            "kind": "Var",
+            "name": "persistent",
+            "printedName": "persistent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NVECTASDK.NVECTAGlobalAttributePersistenceType.Type) -> NVECTASDK.NVECTAGlobalAttributePersistenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVECTAGlobalAttributePersistenceType",
+                    "printedName": "NVECTASDK.NVECTAGlobalAttributePersistenceType",
+                    "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NVECTASDK.NVECTAGlobalAttributePersistenceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NVECTAGlobalAttributePersistenceType",
+                        "printedName": "NVECTASDK.NVECTAGlobalAttributePersistenceType",
+                        "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO10persistentyA2CmF",
+            "mangledName": "$s9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO10persistentyA2CmF",
+            "moduleName": "NVECTASDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NVECTAGlobalAttributePersistenceType",
+                "printedName": "NVECTASDK.NVECTAGlobalAttributePersistenceType",
+                "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NVECTAGlobalAttributePersistenceType",
+                "printedName": "NVECTASDK.NVECTAGlobalAttributePersistenceType",
+                "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "NVECTASDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO9hashValueSivp",
+            "mangledName": "$s9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO9hashValueSivp",
+            "moduleName": "NVECTASDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO9hashValueSivg",
+                "mangledName": "$s9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO9hashValueSivg",
+                "moduleName": "NVECTASDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "NVECTASDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO",
+        "mangledName": "$s9NVECTASDK36NVECTAGlobalAttributePersistenceTypeO",
+        "moduleName": "NVECTASDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -3893,9 +7221,23 @@
     {
       "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Public\/NVECTA+Routing.swift",
       "kind": "Dictionary",
-      "offset": 306,
+      "offset": 310,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Public\/NVECTACenterStyleConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1147,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Public\/NVECTACenterStyleConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1368,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Core\/Runtime\/SDKState.swift",
@@ -3905,11 +7247,60 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Infrastructure\/Logging\/NVECTASDKLogConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 231,
+      "length": 13,
+      "value": "\"nvLogsLevel\""
+    },
+    {
+      "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Infrastructure\/Logging\/NVECTASDKLogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 195,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Infrastructure\/Logging\/NVECTASDKLogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 215,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Infrastructure\/Logging\/NVECTASDKLogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 236,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Infrastructure\/Logging\/NVECTASDKLogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 254,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Infrastructure\/Logging\/NVECTASDKLogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 273,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Infrastructure\/Logging\/NVECTASDKLogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 294,
+      "length": 1,
+      "value": "4"
+    },
+    {
       "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Public\/NVECTA.swift",
       "kind": "StringLiteral",
-      "offset": 329,
-      "length": 30,
-      "value": "\"NVECTA SDK delegate assigned\""
+      "offset": 344,
+      "length": 22,
+      "value": "\"delegate assigned !!\""
     },
     {
       "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Core\/Lifecycle\/LifecycleManager.swift",
@@ -3917,6 +7308,13 @@
       "offset": 241,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTASDK\/NVECTASDK\/Infrastructure\/Logging\/NVECTASDKLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 318,
+      "length": 33,
+      "value": "\"com.nvecta.ios.sdk.logger.queue\""
     }
   ]
 }

@@ -576,6 +576,19 @@ Manage and display user notifications within a centralized in-app notification c
 
 Refer to the NVECTA iOS SDK [Change Log](CHANGELOG.md).
 
+## Optional IDFA / Tracking Support
+
+`NVECTAAdTrackingSDK` is an optional binary XCFramework that provides
+App Tracking Transparency (ATT) authorization and IDFA retrieval.
+
+Applications that do not require IDFA can use `NVECTA iOS SDK` without
+integrating `NVECTAAdTrackingSDK`.
+
+For complete installation, configuration, ATT authorization modes,
+IDFA behavior, privacy requirements, and troubleshooting, see:
+
+[IDFA Tracking & Integration](./Documentation/Features/IDFATracking.md)
+
 ## ❓Questions
 
 Need help? Contact the `NVECTA` support team directly from the `NVECTA` Dashboard for assistance with integration, configuration, or troubleshooting.

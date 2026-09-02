@@ -8,6 +8,7 @@
 import UIKit
 import UserNotifications
 import NVECTASDK
+import NVECTAAdTrackingSDK
 //import notifyvisitors
 
 
@@ -27,11 +28,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
              nvMode = "live"
         #endif
         
-      //  notifyvisitors.initialize(nvMode)
+//        notifyvisitors.initialize(nvMode)
        // notifyvisitors.registerPush(withDelegate: self, app: application, launchOptions: launchOptions)
         
         NVECTA.shared.register(mode: nvMode!)
         
+        NVECTAAdTrackingManager.shared.configuration.enableAutomaticATTRequest = false
+        NVECTAAdTrackingManager.shared.start()
         
         NVECTA.shared.registerPush(delegate: self, application: application, launchOptions: launchOptions)
         return true

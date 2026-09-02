@@ -24,11 +24,11 @@ let package = Package(
         .library(
             name: "notifyvisitorsNotificationService",
             targets: ["notifyvisitorsNotificationService"]
+        ),
+        .library(
+            name: "NVECTAAdTrackingSDK",
+            targets: ["NVECTAAdTrackingSDK"]
         )
-//        .library(
-//            name: "NVECTAAdTrackingSDK",
-//            targets: ["NVECTAAdTrackingSDK"]
-//        )
     ],
     targets: [
         .binaryTarget(
@@ -46,10 +46,10 @@ let package = Package(
         .binaryTarget(
             name: "notifyvisitorsNotificationService",
             path: "Frameworks/notifyvisitorsNotificationService.xcframework"
+        ),
+        .binaryTarget(
+            name: "NVECTAAdTrackingSDK",
+            path: "Frameworks/NVECTAAdTrackingSDK.xcframework"
         )
-//        .binaryTarget(
-//            name: "NVECTAAdTrackingSDK",
-//            path: "Frameworks/NVECTAAdTrackingSDK.xcframework"
-//        )
     ]
 )

@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		60uVUTg0pDJr8Ge5xJuNEPc+DZs=
+		9vphOg5laWa39dJpqb/J5AqxsMk=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		GwVWcSHyczuAhOrftQ6ezC+dDds=
+		RIabbhYiLcCRlEaJ5SaUkDHtuNU=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vpcOETwhTiViXpplsgsK0lJXi1M=
+		ybLsLUHyVQTIXjpBXyZStdVeoIE=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vpcOETwhTiViXpplsgsK0lJXi1M=
+		ybLsLUHyVQTIXjpBXyZStdVeoIE=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PaYR+1JxQjOItxh7L8G83ALwalw=
+		GMpJYEUhIbvbObcbGY8j2PV5SU8=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		GwVWcSHyczuAhOrftQ6ezC+dDds=
+		RIabbhYiLcCRlEaJ5SaUkDHtuNU=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		n+Pi0hCklNcC7I0dCpMYgDT/GyM=
+		d/HRm/jbFou8HNTea1rXoFSKOMo=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		n+Pi0hCklNcC7I0dCpMYgDT/GyM=
+		d/HRm/jbFou8HNTea1rXoFSKOMo=
 		</data>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bszXS/mXq1GZhA63z2LXKfOn42Q=
+		9QIqKFH1cSehlnmXnYs7Jbs5S28=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,14 +74,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JnewSUqrzJ5yrXa9rY3ciCHnvCy66yOtNDOwWxagGLo=
+			odAU7fxXc4HqKoKAOPYp2TneMDLm/GKJ/yTRzSaHCeU=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			plOqX362G7mQgi0AqMp4SU1T1vTYbtowXjSQXgAToaI=
+			219tVUOe8wslG4HGYL8VNGabwN14QSjoxxXaVzy0w6I=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -95,28 +95,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			plOqX362G7mQgi0AqMp4SU1T1vTYbtowXjSQXgAToaI=
+			219tVUOe8wslG4HGYL8VNGabwN14QSjoxxXaVzy0w6I=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sKdolgZ/Q437NnJqki8BzUpqNk5WCZl8GSvhE8w8nmM=
+			RNTMesItyYD9032ZyJtiaoHg+x8jLwb53CcO3vftegs=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JnewSUqrzJ5yrXa9rY3ciCHnvCy66yOtNDOwWxagGLo=
+			odAU7fxXc4HqKoKAOPYp2TneMDLm/GKJ/yTRzSaHCeU=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BShUgefgjg8J1cksP6WE3G0GO+dSXYdVzDeby2eNKm4=
+			u114WEA3GLv2dSIDz1P2ZONimP/6L8AxaGuAxIGylIk=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -130,14 +130,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BShUgefgjg8J1cksP6WE3G0GO+dSXYdVzDeby2eNKm4=
+			u114WEA3GLv2dSIDz1P2ZONimP/6L8AxaGuAxIGylIk=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SmPqPrw+AbhEU8tktvzEGWyuGi8lCWVXtDxQFKJhLNA=
+			yypyz2ZhhRCc73g5VrF1jGE+sO70PlK95Q0xDT1nPEU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
