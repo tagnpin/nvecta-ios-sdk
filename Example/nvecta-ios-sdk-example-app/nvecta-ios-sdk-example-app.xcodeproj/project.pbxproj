@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		350DC65C304828EE006ED3E9 /* NVECTAAdTrackingSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 350DC65B304828EE006ED3E9 /* NVECTAAdTrackingSDK */; };
-		350DC65E304828EE006ED3E9 /* NVECTASDK in Frameworks */ = {isa = PBXBuildFile; productRef = 350DC65D304828EE006ED3E9 /* NVECTASDK */; };
-		350DC660304828EE006ED3E9 /* notifyvisitorsNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 350DC65F304828EE006ED3E9 /* notifyvisitorsNotificationService */; };
-		350DC662304828EE006ED3E9 /* notifyvisitorsNudges in Frameworks */ = {isa = PBXBuildFile; productRef = 350DC661304828EE006ED3E9 /* notifyvisitorsNudges */; };
 		3555D046302F36210023F816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555D03C302F36210023F816 /* AppDelegate.swift */; };
 		3555D047302F36210023F816 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555D043302F36210023F816 /* SceneDelegate.swift */; };
 		3555D048302F36210023F816 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555D044302F36210023F816 /* ViewController.swift */; };
@@ -71,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				350DC660304828EE006ED3E9 /* notifyvisitorsNotificationService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				350DC65E304828EE006ED3E9 /* NVECTASDK in Frameworks */,
-				350DC662304828EE006ED3E9 /* notifyvisitorsNudges in Frameworks */,
-				350DC65C304828EE006ED3E9 /* NVECTAAdTrackingSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +221,6 @@
 			mainGroup = 35939CD5302F18C100E751C1;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				350DC65A304828EE006ED3E9 /* XCLocalSwiftPackageReference "../../../nvecta-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 35939CDF302F18C100E751C1 /* Products */;
@@ -601,13 +592,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		350DC65A304828EE006ED3E9 /* XCLocalSwiftPackageReference "../../../nvecta-ios-sdk" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../../nvecta-ios-sdk";
-		};
-/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		350DC65B304828EE006ED3E9 /* NVECTAAdTrackingSDK */ = {

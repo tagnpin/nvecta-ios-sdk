@@ -30,14 +30,14 @@ Use this method to define the Global Attributes that should be included with you
 #### Swift
 
 ```swift
-notifyvisitors.setGlobalAttributes(_ attributes: [String: Any])
+NVECTA.shared.setGlobalAttributes(attributes: [String: Any])
 ```
 
 <details>
 <summary>Objective-C</summary>
 
 ```objective-c
-[notifyvisitors setGlobalAttributes:(NSDictionary<NSString *, id> *)attributes];
+[[NVECTA shared] setGlobalAttributes: (NSDictionary<NSString *, id> *)attributes];
 ```
 
 </details>
@@ -47,7 +47,7 @@ notifyvisitors.setGlobalAttributes(_ attributes: [String: Any])
 #### Swift
 
 ```swift
-notifyvisitors.setGlobalAttributes(["campaign_id": "SUMMER_2026",
+NVECTA.shared.setGlobalAttributes(["campaign_id": "SUMMER_2026",
                                     "membership_plan": "Premium"])
 ```
 
@@ -55,7 +55,7 @@ notifyvisitors.setGlobalAttributes(["campaign_id": "SUMMER_2026",
 <summary>Objective-C</summary>
 
 ```objective-c
-[notifyvisitors setGlobalAttributes: @{@"campaign_id": @"SUMMER_2026",
+[[NVECTA shared] setGlobalAttributes: @{@"campaign_id": @"SUMMER_2026",
                                       @"membership_plan": @"Premium"}];
 ```
 
@@ -83,14 +83,14 @@ Use `setGlobalAttributes()` to add new `Global Attributes` or update the values 
 #### Swift
 
 ```swift
-notifyvisitors.setGlobalAttributes(["membership_plan": "Gold"])
+NVECTA.shared.setGlobalAttributes(["membership_plan": "Gold"])
 ```
 
 <details>
 <summary>Objective-C</summary>
 
 ```objective-c
-[notifyvisitors setGlobalAttributes: @{@"membership_plan": @"Gold"}];
+[[NVECTA shared] setGlobalAttributes: @{@"membership_plan": @"Gold"}];
 ```
 
 </details>
@@ -106,14 +106,14 @@ Remove a single attribute by key with `removeGlobalAttribute()`:
 #### Swift
 
 ```swift
-notifyvisitors.removeGlobalAttribute(forKey: "campaign_id")
+NVECTA.shared.removeGlobalAttribute(forKey: "campaign_id")
 ```
 
 <details>
 <summary>Objective-C</summary>
 
 ```objective-c
-[notifyvisitors removeGlobalAttributeForKey: @"campaign_id"];
+[[NVECTA shared] removeGlobalAttributeForKey: @"campaign_id"];
 ```
 
 </details>
@@ -127,14 +127,14 @@ Clear all Global Attributes with `clearGlobalAttributes()`:
 #### Swift
 
 ```swift
-notifyvisitors.clearGlobalAttributes()
+NVECTA.shared.clearGlobalAttributes()
 ```
 
 <details>
 <summary>Objective-C</summary>
 
 ```objective-c
-[notifyvisitors clearGlobalAttributes];
+[[NVECTA shared] clearGlobalAttributes];
 ```
 
 </details>
@@ -172,14 +172,14 @@ NVECTA supports three persistence modes:
 #### Swift
 
 ```swift
-notifyvisitors.globalAttributesPersistenceOptions(persistenceType: nvGlobalAttributePersistenceType, expiryInDays: Int)
+NVECTA.shared.globalAttributesPersistenceOptions(persistenceType: NVECTAGlobalAttributePersistenceType, expiryInDays: Int)
 ```
 
 <details>
 <summary>Objective-C</summary>
 
 ```objective-c
-[notifyvisitors globalAttributesPersistenceOptions: (nvGlobalAttributePersistenceType)persistenceType expiryInDays: (NSInteger)expiryInDays];
+[[NVECTA shared] globalAttributesPersistenceOptions: (NVECTAGlobalAttributePersistenceType)persistenceType expiryInDays: (NSInteger)expiryInDays];
 ```
 
 </details>

@@ -33,7 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         NVECTA.shared.register(mode: nvMode!)
         
-        NVECTAAdTrackingManager.shared.configuration.enableAutomaticATTRequest = false
         NVECTAAdTrackingManager.shared.start()
         
         NVECTA.shared.registerPush(delegate: self, application: application, launchOptions: launchOptions)

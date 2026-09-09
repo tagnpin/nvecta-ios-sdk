@@ -2,7 +2,11 @@
 
 # NVECTA iOS SDK
 
-![iOS 13.0+](https://img.shields.io/badge/iOS-13.0%2B-blue.svg) [![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/) ![Formerly](https://img.shields.io/badge/Formerly-Notifyvisitors-blue)
+[![License](https://img.shields.io/cocoapods/l/notifyvisitors.svg?style=flat)](http://cocoapods.org/pods/notifyvisitors)
+[![Platform](https://img.shields.io/cocoapods/p/notifyvisitors.svg?style=flat)](http://cocoapods.org/pods/notifyvisitors)
+![iOS 13.0+](https://img.shields.io/badge/iOS-13.0%2B-blue.svg)
+[![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
+[![Formerly](https://img.shields.io/badge/Formerly-Notifyvisitors-blue)](https://notifyvisitors.com/)
 
 ## 🚀 Quick Introduction
 

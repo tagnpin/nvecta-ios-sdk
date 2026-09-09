@@ -106,7 +106,7 @@ NVECTA.shared.notificationCenter(with: configuration)
 
 ```objective-c
 /* REQUIRED 1: Initialise NVCenterStyleConfig  */
- *configuration = [[NVECTACenterStyleConfig alloc] init];
+ NVECTACenterStyleConfig *configuration = [[NVECTACenterStyleConfig alloc] init];
 
 [configuration setFirstTabWithLable: @"your_first_label" displayName: @"1st tab title will be shown in app"];
 
@@ -118,7 +118,7 @@ NVECTA.shared.notificationCenter(with: configuration)
 /* OPTIONAL:*/
 [configuration setSelectedTabIndex: 0];
 [configuration setSelectedTabTextColor: [UIColor whiteColor]];
-[configuration setUnselectedTabTextColorr: [UIColor blackColor]];
+[configuration setUnselectedTabTextColor: [UIColor blackColor]];
 [configuration setSelectedTabBackgroundColor: [UIColor redColor]];
 [configuration setUnselectedTabBackgroundColor: [UIColor lightGrayColor]];
 
@@ -169,19 +169,20 @@ NVECTA.shared.notificationCenter(with: configuration)
 
 ```objective-c
 /* REQUIRED 1: Initialise NVCenterStyleConfig  */
-NVCenterStyleConfig * nvConfig = [[NVCenterStyleConfig alloc] init];
-[nvConfig setFirstTabWithTabLable: @"all" TagDisplayName: @"All"];
-[nvConfig setSecondTabWithTabLable: @"promotion" TagDisplayName: @"Promotionals"];
-[nvConfig setThirdTabWithTabLable: @"offer" TagDisplayName: @"Offers"];
+ NVECTACenterStyleConfig *configuration = [[NVECTACenterStyleConfig alloc] init];
+
+[configuration setFirstTabWithLable: @"all" displayName: @"All"];
+[configuration setSecondTabWithLable: @"promotion" displayName: @"Promotionals"];
+[configuration setThirdTabWithLable: @"offer" displayName: @"Offers"];
 
 /* OPTIONAL:*/
-[nvConfig setSelectedTabTextColor: [UIColor whiteColor]];
-[nvConfig setUnselectedTabTextColor: [UIColor blackColor]];
-[nvConfig setSelectedTabBgColor: [UIColor redColor]];
-[nvConfig setUnselectedTabBgColor: [UIColor lightGrayColor]];
+[configuration setSelectedTabTextColor: [UIColor whiteColor]];
+[configuration setUnselectedTabTextColor: [UIColor blackColor]];
+[configuration setSelectedTabBackgroundColor: [UIColor redColor]];
+[configuration setUnselectedTabBackgroundColor: [UIColor lightGrayColor]];
 
 /*REQUIRED 2: Launch the Notification Center view controller with the above configuration */
-[notifyvisitors notificationCenterWithConfiguration: nvConfig];
+[[NVECTA shared] notificationCenterWithConfiguration: configuration];
 ```
 
 </details>
@@ -229,13 +230,13 @@ You can retrieve the unread notification count and display it on a badge, bell i
 #### Swift
 
 ```swift
-let nvConfig = NVCenterStyleConfig()
-nvConfig.setFirstTabWithTabLable("all", tagDisplayName: "All")
-nvConfig.setSecondTabWithTabLable("promotion", tagDisplayName: "Promotionals")
-nvConfig.setThirdTabWithTabLable("offer", tagDisplayName: "Offers")
+let configuration = NVECTACenterStyleConfig()
+configuration.setFirstTab(label: "all", displayName: "All")
+configuration.setSecondTab(label: "promotion", displayName: "Promotionals")
+configuration.setThirdTab(label: "offer", displayName: "Offers")
 
-notifyvisitors.getNotificationCenterCount(withConfiguration: nvConfig) { (unreadCounts: [AnyHashable : Any]?) in
-     //do you task here
+NVECTA.shared.getNotificationCenterCount(with: configuration) { (unreadCounts: [AnyHashable : Any]?) in
+  //do you task here
 }
 ```
 
@@ -243,12 +244,13 @@ notifyvisitors.getNotificationCenterCount(withConfiguration: nvConfig) { (unread
 <summary>Objective-C</summary>
 
 ```objective-c
-NVCenterStyleConfig * nvConfig = [[NVCenterStyleConfig alloc] init];
-[nvConfig setFirstTabWithTabLable: @"all" TagDisplayName: @"All"];
-[nvConfig setSecondTabWithTabLable: @"promotion" TagDisplayName: @"Promotionals"];
-[nvConfig setThirdTabWithTabLable: @"offer" TagDisplayName: @"Offers"];
+NVECTACenterStyleConfig *configuration = [[NVECTACenterStyleConfig alloc] init];
 
-[notifyvisitors getNotificationCenterCountWithConfiguration: nvConfig countResult:^(NSDictionary * unreadCounts) {
+[configuration setFirstTabWithLable: @"all" displayName: @"All"];
+[configuration setSecondTabWithLable: @"promotion" displayName: @"Promotionals"];
+[configuration setThirdTabWithLable: @"offer" displayName: @"Offers"];
+
+[[NVECTA shared] getNotificationCenterCountWithConfiguration: configuration, countResult:^(NSDictionary * unreadCounts) {
      //do you task here
 }];
 ```
@@ -277,8 +279,8 @@ If you want to build your own custom App Inbox UI, you can retrieve notification
 #### Swift
 
 ```swift
-notifyvisitors.getNotificationCenterData { (notificationsData: [AnyHashable : Any]?) in
-    print("getNotificationCenterData response data = \(notificationsData ?? [:])")
+NVECTA.shared.getNotificationCenterData { (notificationsData: [String : Any]?) in
+  print("getNotificationCenterData response data = \(notificationsData ?? [:])")
 }
 ```
 
@@ -286,7 +288,7 @@ notifyvisitors.getNotificationCenterData { (notificationsData: [AnyHashable : An
 <summary>Objective-C</summary>
 
 ```objective-c
-[notifyvisitors getNotificationCenterData:^(NSDictionary * _Nullable notificationsData) {
+[[NVECTA shared] getNotificationCenterData:^(NSDictionary * _Nullable notificationsData) {
     NSLog(@"getNotificationCenterData response data = %@", notificationsData);
 }];
 ```

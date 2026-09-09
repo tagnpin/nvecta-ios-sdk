@@ -92,6 +92,25 @@ If this key is not present, `NVECTAAdTrackingSDK` will not request ATT authoriza
 
 `NVECTAAdTrackingSDK` should be initialized just after the `notifyvisitors or NVECTASDK` initialization.
 
+### Syntax
+
+#### Swift
+
+```swift
+NVECTAAdTrackingManager.shared.start();
+```
+
+<details>
+<summary>Objective-C</summary>
+
+```objective-c
+[[NVECTAAdTrackingManager shared] start];
+```
+
+</details>
+
+### Example:
+
 The recommended initialization order is:
 
 ### While using `NVECTASDK`
@@ -118,7 +137,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         NVECTA.shared.register(mode: nvMode!)
 
-        NVECTAAdTrackingManager.shared.configuration.enableAutomaticATTRequest = true;
         NVECTAAdTrackingManager.shared.start();
 
         return true
@@ -147,7 +165,6 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     #endif
 
     [[NVECTA shared] register: nvMode];
-    [[NVECTAAdTrackingManager shared] configuration].enableAutomaticATTRequest = YES;
     [[NVECTAAdTrackingManager shared] start];
 
     return YES;
@@ -189,7 +206,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         notifyvisitors.initialize(nvMode)
 
-        NVECTAAdTrackingManager.shared.configuration.enableAutomaticATTRequest = true;
         NVECTAAdTrackingManager.shared.start();
 
         return true
@@ -219,7 +235,6 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     [notifyvisitors Initialize: nvMode];
 
-    [[NVECTAAdTrackingManager shared] configuration].enableAutomaticATTRequest = YES;
     [[NVECTAAdTrackingManager shared] start];
 
     return YES;
@@ -237,46 +252,107 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 >
 > This initialization order ensures that `notifyvisitors` is ready to receive tracking state updates from `NVECTAAdTrackingSDK`.
 
+## What `start()` does
+
+`start()` initializes the tracking manager and synchronizes the current tracking state.
+
+It:
+
+1. Initializes the tracking manager.
+2. Registers application lifecycle observation.
+3. Reads the current ATT authorization status.
+4. Retrieves the IDFA if tracking authorization is already granted.
+5. Communicates the tracking state to `notifyvisitors or NVECTASDK` when required.
+6. Continues normally when ATT is unavailable or authorization has not been granted.
+
+> ### Important
+>
+> `start()` **does not display the ATT permission prompt**.
+>
+> This is intentional.
+>
+> The application should explicitly decide when the ATT permission prompt should be presented.
+
 ---
 
-# ATT Authorization Modes
+<br>
 
-`NVECTAAdTrackingSDK` supports two authorization modes.
+# Requesting ATT Authorization
 
-## 1. Automatic ATT Authorization
+### Use:
 
-Use automatic authorization when you want `NVECTAAdTrackingSDK` to request tracking permission on behalf of the application.
-
-Set:
-
-### Swift
+#### Swift
 
 ```swift
-NVECTAAdTrackingManager.shared.configuration.enableAutomaticATTRequest = true;
-NVECTAAdTrackingManager.shared.start();
+NVECTAAdTrackingManager.shared.requestTrackingAuthorization()
 ```
 
 <details>
 <summary>Objective-C</summary>
 
 ```objective-c
-[[NVECTAAdTrackingManager shared] configuration].enableAutomaticATTRequest = YES;
-[[NVECTAAdTrackingManager shared] start];
+[[NVECTAAdTrackingManager shared] requestTrackingAuthorization];
 ```
 
 </details>
 
 <br>
 
-On iOS 14 and later:
+when the application wants to request tracking authorization.
 
-- If ATT status is `.notDetermined`, `NVECTAAdTrackingSDK` requests authorization.
-- If the user allows tracking, the SDK retrieves the IDFA.
-- If the user denies tracking, no IDFA is provided.
-- If authorization was already decided in a previous application version, the SDK does not display the permission prompt again.
-- If tracking is already authorized, the SDK retrieves the current IDFA during initialization.
+<br>
 
-### Recommended AppDelegate Example
+For example:
+
+#### Swift
+
+```swift
+NVECTAAdTrackingManager.shared.requestTrackingAuthorization { status in
+    print("ATT authorization status: \(status)")
+}
+```
+
+<details>
+<summary>Objective-C</summary>
+
+```objective-c
+[[NVECTAAdTrackingManager shared] requestTrackingAuthorization:^(NVECTATrackingAuthorizationStatus *status) {
+    NSLog(@"ATT authorization status: %ld", (long)status);
+}];
+```
+
+</details>
+
+<br>
+
+The same method can be used regardless of whether the application or the SDK is initiating the permission request.
+
+## SDK-Initiated Permission Request
+
+If the application wants to request ATT authorization during application startup, it can explicitly call:
+
+#### Swift
+
+```swift
+NVECTAAdTrackingManager.shared.start()
+NVECTAAdTrackingManager.shared.requestTrackingAuthorization()
+```
+
+<details>
+<summary>Objective-C</summary>
+
+```objective-c
+[[NVECTAAdTrackingManager shared] start];
+[[NVECTAAdTrackingManager shared] requestTrackingAuthorization];
+```
+
+</details>
+
+<br>
+
+For example:
+
+### Swift
 
 ```swift
 import UIKit
@@ -298,8 +374,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         NVECTA.shared.register(mode: nvMode!)
 
-        NVECTAAdTrackingManager.shared.configuration.enableAutomaticATTRequest = true;
-        NVECTAAdTrackingManager.shared.start();
+        NVECTAAdTrackingManager.shared.start()
+        NVECTAAdTrackingManager.shared.requestTrackingAuthorization { status in
+            print("ATT authorization status: \(status)")
+        }
 
         return true
     }
@@ -327,8 +405,11 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     #endif
 
     [[NVECTA shared] register: nvMode];
-    [[NVECTAAdTrackingManager shared] configuration].enableAutomaticATTRequest = YES;
+
     [[NVECTAAdTrackingManager shared] start];
+    [[NVECTAAdTrackingManager shared] requestTrackingAuthorization:^(NVECTATrackingAuthorizationStatus *status) {
+        NSLog(@"ATT authorization status: %ld", (long)status);
+    }];
 
     return YES;
 }
@@ -341,16 +422,19 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 <br>
 
----
+However, applications should consider their user experience carefully before displaying the ATT prompt immediately during application launch.
 
-# 2. Application-Managed ATT Authorization
+In many applications, requesting permission after the user has reached an appropriate screen or completed an explanatory flow provides a better experience.
 
-If the application already has its own ATT permission flow, disable automatic authorization:
+## Application-Managed Permission Request
 
-### Swift
+Applications can also control exactly when the ATT prompt is displayed.
+
+**Initialize the SDK:** inside `didFinishLaunchingWithOptions` of your `AppDelehgate` file call the `start()` function as described previously
+
+#### Swift
 
 ```swift
-NVECTAAdTrackingManager.shared.configuration.enableAutomaticATTRequest = false;
 NVECTAAdTrackingManager.shared.start();
 ```
 
@@ -358,7 +442,6 @@ NVECTAAdTrackingManager.shared.start();
 <summary>Objective-C</summary>
 
 ```objective-c
-[[NVECTAAdTrackingManager shared] configuration].enableAutomaticATTRequest = NO;
 [[NVECTAAdTrackingManager shared] start];
 ```
 
@@ -366,11 +449,9 @@ NVECTAAdTrackingManager.shared.start();
 
 <br>
 
-The application can request ATT authorization when appropriate.
+Then request authorization at the appropriate point in the application's user experience:
 
-For example:
-
-### Swift
+#### Swift
 
 ```swift
 NVECTAAdTrackingManager.shared.requestTrackingAuthorization { status in
@@ -382,7 +463,6 @@ NVECTAAdTrackingManager.shared.requestTrackingAuthorization { status in
 <summary>Objective-C</summary>
 
 ```objective-c
-
 [[NVECTAAdTrackingManager shared] requestTrackingAuthorization:^(NVECTATrackingAuthorizationStatus *status) {
     NSLog(@"ATT authorization status: %ld", (long)status);
 }];
@@ -392,15 +472,52 @@ NVECTAAdTrackingManager.shared.requestTrackingAuthorization { status in
 
 <br>
 
-The application remains responsible for deciding **when** the permission prompt should be displayed.
+For example:
 
-Once authorization is granted, `NVECTAAdTrackingSDK` retrieves the IDFA and automatically communicates the value to `NVECTASDK`.
+#### Swift
 
-No additional IDFA synchronization code is required in the application.
+```swift
+override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
 
----
+    NVECTAAdTrackingManager.shared.requestTrackingAuthorization { status in
+        print("ATT authorization status: \(status)")
+    }
+}
+```
 
-# Existing ATT Authorization
+<details>
+<summary>Objective-C</summary>
+
+```objective-c
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear: animated];
+
+    [[NVECTAAdTrackingManager shared] requestTrackingAuthorization:^(NVECTATrackingAuthorizationStatus *status) {
+        NSLog(@"ATT authorization status: %ld", (long)status);
+    }];
+}
+```
+
+</details>
+
+<br>
+
+The application therefore controls **when** the permission request occurs, while `NVECTAAdTrackingSDK` handles the ATT authorization and IDFA retrieval.
+
+## ATT Authorization Behavior
+
+`NVECTAAdTrackingSDK` handles the different ATT authorization states automatically.
+
+| ATT Status              | SDK Behavior                                      |
+| ----------------------- | ------------------------------------------------- |
+| `.notDetermined`        | Waits until authorization is explicitly requested |
+| `.authorized`           | Retrieves the IDFA                                |
+| `.denied`               | Does not provide an IDFA                          |
+| `.restricted`           | Does not provide an IDFA                          |
+| Unsupported iOS version | Continues without an IDFA                         |
+
+## Existing ATT Authorization
 
 `NVECTAAdTrackingSDK` is designed to support applications that already have an ATT authorization history.
 
@@ -625,8 +742,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         notifyvisitors.initialize(nvMode)
 
-        NVECTAAdTrackingManager.shared.configuration.enableAutomaticATTRequest = true;
+
         NVECTAAdTrackingManager.shared.start();
+        NVECTAAdTrackingManager.shared.requestTrackingAuthorization { status in
+            print("ATT authorization status: \(status)")
+        }
 
         return true
     }
@@ -655,8 +775,10 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     [notifyvisitors Initialize: nvMode];
 
-    [[NVECTAAdTrackingManager shared] configuration].enableAutomaticATTRequest = YES;
     [[NVECTAAdTrackingManager shared] start];
+    [[NVECTAAdTrackingManager shared] requestTrackingAuthorization:^(NVECTATrackingAuthorizationStatus *status) {
+        NSLog(@"ATT authorization status: %ld", (long)status);
+    }];
 
     return YES;
 }
@@ -692,8 +814,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
 
         notifyvisitors.initialize(nvMode)
-
-        NVECTAAdTrackingManager.shared.configuration.enableAutomaticATTRequest = false
         NVECTAAdTrackingManager.shared.start()
 
         return true
@@ -722,8 +842,6 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     #endif
 
     [notifyvisitors Initialize: nvMode];
-
-    [[NVECTAAdTrackingManager shared] configuration].enableAutomaticATTRequest = NO;
     [[NVECTAAdTrackingManager shared] start];
 
     return YES;
@@ -769,9 +887,10 @@ Verify:
 
 1. The application is running on iOS 14 or later.
 2. `NSUserTrackingUsageDescription` exists in the application's `Info.plist`.
-3. `enableAutomaticATTRequest` is set to `true` when using automatic authorization.
-4. ATT authorization has not already been determined for the application.
-5. The request is triggered from an appropriate application lifecycle/user interaction point.
+3. `NVECTAAdTrackingManager.shared.start()` has been called.
+4. `requestTrackingAuthorization()` has been called when the application expects the prompt.
+5. ATT authorization has not already been determined for the application.
+6. The request is triggered from an appropriate application lifecycle/user interaction point.
 
 The ATT system does not display the authorization prompt repeatedly after the user has already made a decision.
 

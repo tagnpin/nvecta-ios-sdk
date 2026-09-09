@@ -1,6 +1,6 @@
 # CHANGE LOG
 
-## Version 1.0.1 _(September 02, 2026)_
+## Version 1.0.1 _(September 09, 2026)_
 
 This is the release of updated `NVECTASDK (v~1.0.1)` through `Swift Package Manager (SPM)`.
 
@@ -11,10 +11,9 @@ This is the release of updated `NVECTASDK (v~1.0.1)` through `Swift Package Mana
 ### Updated
 
 - Updated `notifyvisitors (v~8.0.3)` framework to support `NVECTAAdTrackingSDK` and track IDFA via this new dependency only.
-- Updated `NVECTASDK (v~1.0.1)` with remaining `notifyvisitors` functions to access via `NVECTASDK` 
+- Updated `NVECTASDK (v~1.0.1)` with remaining `notifyvisitors` functions to access via `NVECTASDK`
 - bug fixes
 - code optimisation and performance enhancement
-
 
 ## Version 1.0.0 _(August 26, 2026)_
 

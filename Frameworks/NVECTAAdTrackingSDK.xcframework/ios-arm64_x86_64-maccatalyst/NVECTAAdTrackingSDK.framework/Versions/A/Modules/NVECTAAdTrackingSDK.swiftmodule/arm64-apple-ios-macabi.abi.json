@@ -504,58 +504,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "configuration",
-            "printedName": "configuration",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NVECTAAdTrackingConfiguration",
-                "printedName": "NVECTAAdTrackingSDK.NVECTAAdTrackingConfiguration",
-                "usr": "c:@M@NVECTAAdTrackingSDK@objc(cs)NVECTAAdTrackingConfiguration"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@NVECTAAdTrackingSDK@objc(cs)NVECTAAdTrackingManager(py)configuration",
-            "mangledName": "$s19NVECTAAdTrackingSDK0aB7ManagerC13configurationAA0aB13ConfigurationCvp",
-            "moduleName": "NVECTAAdTrackingSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NVECTAAdTrackingConfiguration",
-                    "printedName": "NVECTAAdTrackingSDK.NVECTAAdTrackingConfiguration",
-                    "usr": "c:@M@NVECTAAdTrackingSDK@objc(cs)NVECTAAdTrackingConfiguration"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@NVECTAAdTrackingSDK@objc(cs)NVECTAAdTrackingManager(im)configuration",
-                "mangledName": "$s19NVECTAAdTrackingSDK0aB7ManagerC13configurationAA0aB13ConfigurationCvg",
-                "moduleName": "NVECTAAdTrackingSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "start",
             "printedName": "start()",
@@ -1132,329 +1080,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "NVECTAAdTrackingSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NVECTAAdTrackingConfiguration",
-        "printedName": "NVECTAAdTrackingConfiguration",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "enableAutomaticATTRequest",
-            "printedName": "enableAutomaticATTRequest",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@NVECTAAdTrackingSDK@objc(cs)NVECTAAdTrackingConfiguration(py)enableAutomaticATTRequest",
-            "mangledName": "$s19NVECTAAdTrackingSDK0aB13ConfigurationC25enableAutomaticATTRequestSbvp",
-            "moduleName": "NVECTAAdTrackingSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@NVECTAAdTrackingSDK@objc(cs)NVECTAAdTrackingConfiguration(im)enableAutomaticATTRequest",
-                "mangledName": "$s19NVECTAAdTrackingSDK0aB13ConfigurationC25enableAutomaticATTRequestSbvg",
-                "moduleName": "NVECTAAdTrackingSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@NVECTAAdTrackingSDK@objc(cs)NVECTAAdTrackingConfiguration(im)setEnableAutomaticATTRequest:",
-                "mangledName": "$s19NVECTAAdTrackingSDK0aB13ConfigurationC25enableAutomaticATTRequestSbvs",
-                "moduleName": "NVECTAAdTrackingSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:19NVECTAAdTrackingSDK0aB13ConfigurationC25enableAutomaticATTRequestSbvM",
-                "mangledName": "$s19NVECTAAdTrackingSDK0aB13ConfigurationC25enableAutomaticATTRequestSbvM",
-                "moduleName": "NVECTAAdTrackingSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "authorizationTimeout",
-            "printedName": "authorizationTimeout",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@NVECTAAdTrackingSDK@objc(cs)NVECTAAdTrackingConfiguration(py)authorizationTimeout",
-            "mangledName": "$s19NVECTAAdTrackingSDK0aB13ConfigurationC20authorizationTimeoutSdvp",
-            "moduleName": "NVECTAAdTrackingSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@NVECTAAdTrackingSDK@objc(cs)NVECTAAdTrackingConfiguration(im)authorizationTimeout",
-                "mangledName": "$s19NVECTAAdTrackingSDK0aB13ConfigurationC20authorizationTimeoutSdvg",
-                "moduleName": "NVECTAAdTrackingSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@NVECTAAdTrackingSDK@objc(cs)NVECTAAdTrackingConfiguration(im)setAuthorizationTimeout:",
-                "mangledName": "$s19NVECTAAdTrackingSDK0aB13ConfigurationC20authorizationTimeoutSdvs",
-                "moduleName": "NVECTAAdTrackingSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:19NVECTAAdTrackingSDK0aB13ConfigurationC20authorizationTimeoutSdvM",
-                "mangledName": "$s19NVECTAAdTrackingSDK0aB13ConfigurationC20authorizationTimeoutSdvM",
-                "moduleName": "NVECTAAdTrackingSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NVECTAAdTrackingConfiguration",
-                "printedName": "NVECTAAdTrackingSDK.NVECTAAdTrackingConfiguration",
-                "usr": "c:@M@NVECTAAdTrackingSDK@objc(cs)NVECTAAdTrackingConfiguration"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@NVECTAAdTrackingSDK@objc(cs)NVECTAAdTrackingConfiguration(im)init",
-            "mangledName": "$s19NVECTAAdTrackingSDK0aB13ConfigurationCACycfc",
-            "moduleName": "NVECTAAdTrackingSDK",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@NVECTAAdTrackingSDK@objc(cs)NVECTAAdTrackingConfiguration",
-        "mangledName": "$s19NVECTAAdTrackingSDK0aB13ConfigurationC",
-        "moduleName": "NVECTAAdTrackingSDK",
-        "declAttributes": [
-          "Final",
-          "AccessControl",
-          "ObjCMembers",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
       }
     ],
     "json_format_version": 8
@@ -1512,35 +1137,35 @@
     {
       "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTAAdTrackingSDK\/NVECTAAdTrackingSDK\/Public\/NVECTAAdTrackingManager.swift",
       "kind": "StringLiteral",
-      "offset": 887,
+      "offset": 789,
       "length": 33,
       "value": "\"com.nvecta.tracking.state.queue\""
     },
     {
       "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTAAdTrackingSDK\/NVECTAAdTrackingSDK\/Public\/NVECTAAdTrackingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 992,
+      "offset": 894,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTAAdTrackingSDK\/NVECTAAdTrackingSDK\/Public\/NVECTAAdTrackingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1047,
+      "offset": 949,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTAAdTrackingSDK\/NVECTAAdTrackingSDK\/Public\/NVECTAAdTrackingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1230,
+      "offset": 1132,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTAAdTrackingSDK\/NVECTAAdTrackingSDK\/Public\/NVECTAAdTrackingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1716,
+      "offset": 1618,
       "length": 5,
       "value": "false"
     },
@@ -1592,20 +1217,6 @@
       "offset": 251,
       "length": 13,
       "value": "\"nvLogsLevel\""
-    },
-    {
-      "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTAAdTrackingSDK\/NVECTAAdTrackingSDK\/Public\/NVECTAAdTrackingConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 341,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/siddharth\/TagnpinWorkspace\/NVECTA\/nvecta_ios_sdk_development\/nvectaFrameworks\/NVECTAAdTrackingSDK\/NVECTAAdTrackingSDK\/Public\/NVECTAAdTrackingConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 453,
-      "length": 4,
-      "value": "60.0"
     }
   ]
 }

@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		LEkRlvkS+HTcTxKtxtL6lwKbUeo=
+		ZKMF56mlond8dy3MGMpGnmafq1A=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		g2L1E7u8HdHZZGPN3SM7jsHouQA=
+		hja4Wt0GT1+fsHGYkcYbOdLB1vk=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Vi2zDZIO4WQA0K/yS9w67hOzLLw=
+		A6jNYH8RzPpZ+82NuLOuLyyFUzc=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		jm58QGt5OmcXSqzUdfT6XXDA8Qg=
+		vQJiAAjpZbZyO12wYnFYyoTev5U=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Vi2zDZIO4WQA0K/yS9w67hOzLLw=
+		A6jNYH8RzPpZ+82NuLOuLyyFUzc=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eUiJH7CeWUF7zBdTLT4mdG58om4=
+		lWCotRcMnus0x07+gRBsWzuQx/c=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		g2L1E7u8HdHZZGPN3SM7jsHouQA=
+		hja4Wt0GT1+fsHGYkcYbOdLB1vk=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WsPFUqIb9dT+txaQHE9zqNXcK1Q=
+		vc/IhXkXuzG/L8YjwBIrN4XR1sI=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		l3YyZ2lmDwSjOi8NM6ngQACtvBM=
+		OrYAy3ItfXddFXAzZaHrnIz/t1M=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WsPFUqIb9dT+txaQHE9zqNXcK1Q=
+		vc/IhXkXuzG/L8YjwBIrN4XR1sI=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		U9H2bQO5vmb9gKfmTwgxFI+R3mA=
+		S+KQLD3DRCPsclVFJJcoCH9vJvg=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -59,70 +59,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZxfHJh4BjRYtBLgmeAz9lArZQxCrTKjrgOmrIWRFhLU=
+			2s51wz7U7qTLeoS1eF205hP1oGbouv7KF9NDRAV/g+M=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eQ7Kw5iXlFzgecf/pSGCqmfJMKdOudigo1Wgkip2+co=
+			ihufTMwtg2jrra94ZszR1ylDbIPuv8OzRqVmefRYhDs=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cu3DTd9mlatZV1KtTzECPQnWtECBmAHKRCc8K3g9ssM=
+			Cb+Z5HTjdMAI0hb7F6VAlxZJDl3Za9VJqTs1LebEslo=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eQ7Kw5iXlFzgecf/pSGCqmfJMKdOudigo1Wgkip2+co=
+			ihufTMwtg2jrra94ZszR1ylDbIPuv8OzRqVmefRYhDs=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SdShWShvqwlmgQfbFsXObOcxscVbD9LqBiqjIpRfzTE=
+			GQVVi8vcNVswcpRle7Af/lj+OzhcRmc8ig7dW2dy/iE=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZxfHJh4BjRYtBLgmeAz9lArZQxCrTKjrgOmrIWRFhLU=
+			2s51wz7U7qTLeoS1eF205hP1oGbouv7KF9NDRAV/g+M=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZpG7mgypQpar8BYnpo9jclbv7IKxuolyQ9x96Bdnodc=
+			bfuGiaKPPx12BEIn8paIHyn+A8QIQrfn77vwMre4gBs=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fCj6VT9qnl/WUO00FCRROJm7GRVDQ9dZNZ9ENlE46Vw=
+			6+K+nbF+30AU9cNclT0uwfUJXN5l1YtSar2OmjRm+sw=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZpG7mgypQpar8BYnpo9jclbv7IKxuolyQ9x96Bdnodc=
+			bfuGiaKPPx12BEIn8paIHyn+A8QIQrfn77vwMre4gBs=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x7qfKUr3HDiEzJuefjL8Wrjh2FCd4juRvaoBpRVBNA0=
+			msERF6xYKGWVoR2FSD1tc4++KXjZcOjA4iuTmgVuo2A=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
