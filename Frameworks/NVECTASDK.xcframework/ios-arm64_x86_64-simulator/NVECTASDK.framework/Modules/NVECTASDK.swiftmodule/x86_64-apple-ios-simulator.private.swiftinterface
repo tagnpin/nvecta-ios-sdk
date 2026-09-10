@@ -23,6 +23,9 @@ extension NVECTASDK.NVECTA {
   @objc @discardableResult
   final public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func openUrlGetData(withApplication application: UIKit.UIApplication?, url: Foundation.URL?) -> [Swift.AnyHashable : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @discardableResult
   final public func application(_ application: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([any UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
   #endif
@@ -36,11 +39,53 @@ extension NVECTASDK.NVECTA {
 public struct UserTrackResponse {
   public let rawData: [Swift.String : Any]
 }
+final public class NVECTACenterStyleConfig {
+  final public var firstTabLabel: Swift.String?
+  final public var firstTabDisplayName: Swift.String?
+  final public var secondTabLabel: Swift.String?
+  final public var secondTabDisplayName: Swift.String?
+  final public var thirdTabLabel: Swift.String?
+  final public var thirdTabDisplayName: Swift.String?
+  final public var unselectedTabTextColor: UIKit.UIColor?
+  final public var selectedTabTextColor: UIKit.UIColor?
+  final public var selectedTabBackgroundColor: UIKit.UIColor?
+  final public var unselectedTabBackgroundColor: UIKit.UIColor?
+  final public var selectedTabIndex: Swift.Int
+  final public var tabTextFont: UIKit.UIFont?
+  final public var tabBadgeCountBorderColor: UIKit.UIColor?
+  final public var tabBadgeCountFillColor: UIKit.UIColor?
+  final public var tabBadgeCountTextColor: UIKit.UIColor?
+  final public var shouldTabBadgeShine: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(unselectedTabTextColor: UIKit.UIColor? = nil, selectedTabTextColor: UIKit.UIColor? = nil, selectedTabBackgroundColor: UIKit.UIColor? = nil, unselectedTabBackgroundColor: UIKit.UIColor? = nil, selectedTabIndex: Swift.Int = 0, tabTextFont: UIKit.UIFont? = nil, tabBadgeCountBorderColor: UIKit.UIColor? = nil, tabBadgeCountFillColor: UIKit.UIColor? = nil, tabBadgeCountTextColor: UIKit.UIColor? = nil, shouldTabBadgeShine: Swift.Bool = true)
+  #endif
+  @objc deinit
+}
+extension NVECTASDK.NVECTACenterStyleConfig {
+  final public func setFirstTab(label: Swift.String, displayName: Swift.String)
+  final public func setSecondTab(label: Swift.String, displayName: Swift.String)
+  final public func setThirdTab(label: Swift.String, displayName: Swift.String)
+}
 public struct AnyCodable : Swift.Codable {
   public let value: Any
   public init(_ value: Any)
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc public enum NVECTASDKLogLevel : Swift.Int {
+  case none = -1
+  case error = 0
+  case warning = 1
+  case info = 2
+  case debug = 3
+  case verbose = 4
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(NVECTASDK) @objcMembers final public class NVECTA : ObjectiveC.NSObject {
   @objc public static let shared: NVECTASDK.NVECTA
@@ -55,6 +100,7 @@ public struct AnyCodable : Swift.Codable {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getSessionData() -> Foundation.NSDictionary?
   #endif
+  @objc final public func requestAppleAppStoreInAppReview()
   @objc deinit
 }
 extension NVECTASDK.NVECTA {
@@ -79,6 +125,18 @@ extension NVECTASDK.NVECTA {
   @objc final public func setPushPreferences(_ preferences: [Swift.String]?, unsubscribeFromAll: Swift.Bool)
   #endif
   final public func updateBadge(using action: NVECTASDK.BadgeUpdateAction)
+}
+extension NVECTASDK.NVECTA {
+  @objc final public func notificationCenter()
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func notificationCenter(with configuration: NVECTASDK.NVECTACenterStyleConfig?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getNotificationCenterData(_ notificationsData: (([Swift.String : Any]?) -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getNotificationCenterCount(with configuration: NVECTASDK.NVECTACenterStyleConfig?, countResult unreadCenterCounts: (([Swift.AnyHashable : Any]?) -> Swift.Void)?)
+  #endif
 }
 extension NVECTASDK.NVECTA {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -137,6 +195,9 @@ public struct NotificationClickResponse {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc(nvectaKnownUserIdentified:) optional func nvectaKnownUserIdentified(_ response: [Swift.String : Any]?)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(nvectaNudgeUiFinalized:) optional func nvectaNudgeUiFinalized(_ response: [Swift.String : Any]?)
+  #endif
 }
 @available(iOS 13.0, *)
 extension NVECTASDK.NVECTA {
@@ -144,11 +205,32 @@ extension NVECTASDK.NVECTA {
   @objc final public func sceneWillEnterForeground(_ scene: UIKit.UIScene)
   @objc final public func sceneDidEnterBackground(_ scene: UIKit.UIScene)
 }
+public enum NVECTAGlobalAttributePersistenceType {
+  case memory
+  case session
+  case persistent
+  public static func == (a: NVECTASDK.NVECTAGlobalAttributePersistenceType, b: NVECTASDK.NVECTAGlobalAttributePersistenceType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension NVECTASDK.NVECTA {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func trackEvent(forEventName eventName: Swift.String, attributes: [Swift.String : Any]?, ltv: Swift.String?, scope: Swift.Int)
   #endif
   @objc final public func trackScreen(forScreenName screenName: Swift.String)
 }
+extension NVECTASDK.NVECTA {
+  final public func globalAttributesPersistenceOptions(_ persistenceType: NVECTASDK.NVECTAGlobalAttributePersistenceType, expiryInDays: Swift.Int)
+  @objc final public func setGlobalAttributes(_ attributes: [Swift.String : Any])
+  @objc final public func removeGlobalAttribute(forKey key: Swift.String)
+  @objc final public func clearGlobalAttributes()
+}
+extension NVECTASDK.NVECTASDKLogLevel : Swift.Equatable {}
+extension NVECTASDK.NVECTASDKLogLevel : Swift.Hashable {}
+extension NVECTASDK.NVECTASDKLogLevel : Swift.RawRepresentable {}
 extension NVECTASDK.BadgeUpdateAction : Swift.Equatable {}
 extension NVECTASDK.BadgeUpdateAction : Swift.Hashable {}
+extension NVECTASDK.NVECTAGlobalAttributePersistenceType : Swift.Equatable {}
+extension NVECTASDK.NVECTAGlobalAttributePersistenceType : Swift.Hashable {}

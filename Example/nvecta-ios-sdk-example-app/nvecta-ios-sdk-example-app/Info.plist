@@ -47,5 +47,9 @@
 	<true/>
 	<key>nvAppGroupKey</key>
 	<string>group.com.nvecta.nvecta-ios-sdk-example-app.nvecta</string>
+	<key>nvLogsLevel</key>
+	<string>verbose</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>This identifier will be used to improve analytics and personalized experiences.</string>
 </dict>
 </plist>

@@ -2,7 +2,11 @@
 
 # NVECTA iOS SDK
 
-![iOS 13.0+](https://img.shields.io/badge/iOS-13.0%2B-blue.svg) [![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/) ![Formerly](https://img.shields.io/badge/Formerly-Notifyvisitors-blue)
+[![License](https://img.shields.io/cocoapods/l/notifyvisitors.svg?style=flat)](http://cocoapods.org/pods/notifyvisitors)
+[![Platform](https://img.shields.io/cocoapods/p/notifyvisitors.svg?style=flat)](http://cocoapods.org/pods/notifyvisitors)
+![iOS 13.0+](https://img.shields.io/badge/iOS-13.0%2B-blue.svg)
+[![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
+[![Formerly](https://img.shields.io/badge/Formerly-Notifyvisitors-blue)](https://notifyvisitors.com/)
 
 ## 🚀 Quick Introduction
 
@@ -575,6 +579,19 @@ Manage and display user notifications within a centralized in-app notification c
 ## 🆕 Changelog
 
 Refer to the NVECTA iOS SDK [Change Log](CHANGELOG.md).
+
+## Optional IDFA / Tracking Support
+
+`NVECTAAdTrackingSDK` is an optional binary XCFramework that provides
+App Tracking Transparency (ATT) authorization and IDFA retrieval.
+
+Applications that do not require IDFA can use `NVECTA iOS SDK` without
+integrating `NVECTAAdTrackingSDK`.
+
+For complete installation, configuration, ATT authorization modes,
+IDFA behavior, privacy requirements, and troubleshooting, see:
+
+[IDFA Tracking & Integration](./Documentation/Features/IDFATracking.md)
 
 ## ❓Questions
 

@@ -7,18 +7,27 @@
 
 import UIKit
 import NVECTASDK
-import notifyvisitors
+//import notifyvisitors
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad called")
-        
+        self.view.backgroundColor = .red
         NVECTA.shared.delegate = self
         NVECTA.shared.show(userToken: nil, customRule: nil)
-       
-        NVECTA.shared.trackEvent(forEventName: "", attributes: [:], ltv: "", scope: 1)
+
+//        configuration.setFirstTab(label: "all", displayName: "All")
+//        configuration.setSecondTab(label: "promotion", displayName: "Promotionals")
+//        configuration.setThirdTab(label: "offer", displayName: "Offers")
+        
+//        NVECTA.shared.getNotificationCenterData { (notificationsData: [String : Any]?) in
+//            print("getNotificationCenterData = \(notificationsData ?? [:])")
+//        }
+//        
+//        
+        
 //        notifyvisitors.show(nil, customRule: nil)
         // Do any additional setup after loading the view.
     }
@@ -31,10 +40,7 @@ class ViewController: UIViewController {
 
 extension ViewController: NVECTADelegate {
     func nvectaDidTrackEventResponse(_ response: [String : Any]?) {
-        
-        notifyvisitors.getNotificationCenterData { (notificationsData: [AnyHashable : Any]?) in
-            print("getNotificationCenterData response data = \(notificationsData ?? [:])")
-        }
+        print("[NVECTASDK]-{INFO}: did track event response = \(response ?? [:])")
     }
     
 }

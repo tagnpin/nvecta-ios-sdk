@@ -16,8 +16,6 @@
 		3555D077302F40170023F816 /* NotificationServiceExt.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3555D070302F40170023F816 /* NotificationServiceExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3555D083302F40500023F816 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555D080302F40500023F816 /* NotificationService.swift */; };
 		35624DE530334B4600DE17DA /* testObjCVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35624DE430334B4600DE17DA /* testObjCVCViewController.m */; };
-		35624E053033973300DE17DA /* NVECTASDK in Frameworks */ = {isa = PBXBuildFile; productRef = 35624E043033973300DE17DA /* NVECTASDK */; };
-		35624E073033973300DE17DA /* notifyvisitorsNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 35624E063033973300DE17DA /* notifyvisitorsNotificationService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35624E073033973300DE17DA /* notifyvisitorsNotificationService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35624E053033973300DE17DA /* NVECTASDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +156,7 @@
 				35CB5E373033194D005AA009 /* notifyvisitorsNotificationService */,
 				35624DE930334BBF00DE17DA /* notifyvisitorsNotificationService */,
 				35624E063033973300DE17DA /* notifyvisitorsNotificationService */,
+				350DC65F304828EE006ED3E9 /* notifyvisitorsNotificationService */,
 			);
 			productName = NotificationServiceExt;
 			productReference = 3555D070302F40170023F816 /* NotificationServiceExt.appex */;
@@ -187,6 +184,9 @@
 				35624DE730334BBF00DE17DA /* NVECTASDK */,
 				35624DEB30334BBF00DE17DA /* notifyvisitorsNudges */,
 				35624E043033973300DE17DA /* NVECTASDK */,
+				350DC65B304828EE006ED3E9 /* NVECTAAdTrackingSDK */,
+				350DC65D304828EE006ED3E9 /* NVECTASDK */,
+				350DC661304828EE006ED3E9 /* notifyvisitorsNudges */,
 			);
 			productName = "nvecta-ios-sdk-example-app";
 			productReference = 35939CDE302F18C100E751C1 /* nvecta-ios-sdk-example-app.app */;
@@ -221,7 +221,6 @@
 			mainGroup = 35939CD5302F18C100E751C1;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				35624E033033973300DE17DA /* XCLocalSwiftPackageReference "../../../nvecta-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 35939CDF302F18C100E751C1 /* Products */;
@@ -594,14 +593,23 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		35624E033033973300DE17DA /* XCLocalSwiftPackageReference "../../../nvecta-ios-sdk" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../../nvecta-ios-sdk";
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
+		350DC65B304828EE006ED3E9 /* NVECTAAdTrackingSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NVECTAAdTrackingSDK;
+		};
+		350DC65D304828EE006ED3E9 /* NVECTASDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NVECTASDK;
+		};
+		350DC65F304828EE006ED3E9 /* notifyvisitorsNotificationService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = notifyvisitorsNotificationService;
+		};
+		350DC661304828EE006ED3E9 /* notifyvisitorsNudges */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = notifyvisitorsNudges;
+		};
 		3555D0C9302F696F0023F816 /* NVECTASDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NVECTASDK;
