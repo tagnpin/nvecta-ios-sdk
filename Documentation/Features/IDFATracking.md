@@ -4,21 +4,7 @@
 
 It is designed as an optional dependency so that applications that do not require IDFA can continue using `NVECTASDK` without integrating `NVECTAAdTrackingSDK`.
 
-When `NVECTAAdTrackingSDK` is integrated and IDFA is available, the identifier is automatically communicated internally to `NVECTASDK` and can be included in SDK network requests where applicable.
-
-## Overview
-
-The integration supports the following scenarios:
-
-- Automatic ATT permission request managed by `NVECTAAdTrackingSDK`.
-- Manual ATT permission request managed by the host application.
-- Existing ATT authorization from previous application versions.
-- Automatic IDFA retrieval when tracking authorization is granted.
-- Automatic propagation of IDFA to `NVECTASDK`.
-- No additional IDFA API calls required by the host application.
-- `NVECTASDK` continues to operate normally when `NVECTAAdTrackingSDK` is not integrated.
-
----
+When `NVECTAAdTrackingSDK` is integrated and IDFA is available, the identifier is automatically communicated internally to `NVECTASDK`.
 
 ## Requirements
 
@@ -113,9 +99,7 @@ NVECTAAdTrackingManager.shared.start();
 
 The recommended initialization order is:
 
-### While using `NVECTASDK`
-
-#### Swift
+### Swift
 
 ```swift
 import UIKit
@@ -182,76 +166,6 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 >
 > This initialization order ensures that `NVECTASDK` is ready to receive tracking state updates from `NVECTAAdTrackingSDK`.
 
-### While using `notifyvisitors` iOS SDK
-
-#### Swift
-
-```swift
-import UIKit
-import notifyvisitors
-import NVECTAAdTrackingSDK
-
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        var nvMode:String? = nil
-
-         #if DEBUG
-             nvMode = "debug"
-         #else
-             nvMode = "live"
-        #endif
-
-        notifyvisitors.initialize(nvMode)
-
-        NVECTAAdTrackingManager.shared.start();
-
-        return true
-    }
-}
-```
-
-<details>
-<summary>Objective-C</summary>
-
-```objective-c
-#import "AppDelegate.h"
-#import <notifyvisitors/notifyvisitors.h>
-#import <NVECTAAdTrackingSDK/NVECTAAdTrackingSDK-Swift.h>
-
-@implementation AppDelegate
-
-- (BOOL)application:(UIApplication *)application
-didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSString *nvMode = nil;
-
-    #if DEBUG
-       nvMode = @"debug";
-    #else
-       nvMode = @"live";
-    #endif
-
-    [notifyvisitors Initialize: nvMode];
-
-    [[NVECTAAdTrackingManager shared] start];
-
-    return YES;
-}
-
-@end
-
-```
-
-</details>
-
-<br>
-
-> **Important Note**
->
-> This initialization order ensures that `notifyvisitors` is ready to receive tracking state updates from `NVECTAAdTrackingSDK`.
-
 ## What `start()` does
 
 `start()` initializes the tracking manager and synchronizes the current tracking state.
@@ -260,10 +174,6 @@ It:
 
 1. Initializes the tracking manager.
 2. Registers application lifecycle observation.
-3. Reads the current ATT authorization status.
-4. Retrieves the IDFA if tracking authorization is already granted.
-5. Communicates the tracking state to `notifyvisitors or NVECTASDK` when required.
-6. Continues normally when ATT is unavailable or authorization has not been granted.
 
 > ### Important
 >
