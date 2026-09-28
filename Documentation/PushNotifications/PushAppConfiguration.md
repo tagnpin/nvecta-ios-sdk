@@ -282,7 +282,15 @@ After completing the configuration:
 
 - Build and run the application.
 - Accept the notification permission prompt.
-- Confirm that the device is successfully registered with APNs.
+- Confirm that the device has been successfully registered with APNs. You can verify this in the Xcode console by searching for the following logs:
+
+  ```text
+  [NVECTA]-[INFO]: SubscriptionID for push notification = 5ffc7cf51a553aXXXXXXXXXXXXXXX
+  [NVECTA]-[INFO]: Send subscriptionID to notifyvisitors panel.
+  [NVECTA]-[INFO]: Successfully subscribed to notifyvisitors push notifications.
+  ```
+
+- If the above logs are not printed, check the Xcode console for the error logged from `didFailToRegisterForRemoteNotificationsWithError`, as described in Step 2.1 and review the error message and resolve the underlying issue before proceeding.
 - Send a test push notification from the NVECTA Dashboard.
 - Verify that notifications are received on the device.
 - [**Validate push**](https://support.nvecta.com/support/solutions/articles/84000399426-test-push-notifications) registration, push delivery, and click tracking are working correctly by sending a test push notification
