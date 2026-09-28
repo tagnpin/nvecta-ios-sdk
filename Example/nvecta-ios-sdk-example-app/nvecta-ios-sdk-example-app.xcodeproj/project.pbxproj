@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351D5EE83066AACD000FB8DD /* NVECTAAdTrackingSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 351D5EE73066AACD000FB8DD /* NVECTAAdTrackingSDK */; };
+		351D5EEA3066AACD000FB8DD /* NVECTASDK in Frameworks */ = {isa = PBXBuildFile; productRef = 351D5EE93066AACD000FB8DD /* NVECTASDK */; };
+		351D5EEC3066AACD000FB8DD /* notifyvisitorsNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 351D5EEB3066AACD000FB8DD /* notifyvisitorsNotificationService */; };
+		351D5EEE3066AACD000FB8DD /* notifyvisitorsNudges in Frameworks */ = {isa = PBXBuildFile; productRef = 351D5EED3066AACD000FB8DD /* notifyvisitorsNudges */; };
 		3555D046302F36210023F816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555D03C302F36210023F816 /* AppDelegate.swift */; };
 		3555D047302F36210023F816 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555D043302F36210023F816 /* SceneDelegate.swift */; };
 		3555D048302F36210023F816 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555D044302F36210023F816 /* ViewController.swift */; };
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351D5EEC3066AACD000FB8DD /* notifyvisitorsNotificationService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351D5EEA3066AACD000FB8DD /* NVECTASDK in Frameworks */,
+				351D5EEE3066AACD000FB8DD /* notifyvisitorsNudges in Frameworks */,
+				351D5EE83066AACD000FB8DD /* NVECTAAdTrackingSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +165,7 @@
 				35624DE930334BBF00DE17DA /* notifyvisitorsNotificationService */,
 				35624E063033973300DE17DA /* notifyvisitorsNotificationService */,
 				350DC65F304828EE006ED3E9 /* notifyvisitorsNotificationService */,
+				351D5EEB3066AACD000FB8DD /* notifyvisitorsNotificationService */,
 			);
 			productName = NotificationServiceExt;
 			productReference = 3555D070302F40170023F816 /* NotificationServiceExt.appex */;
@@ -178,15 +187,9 @@
 			);
 			name = "nvecta-ios-sdk-example-app";
 			packageProductDependencies = (
-				3555D0C9302F696F0023F816 /* NVECTASDK */,
-				35CB5E353033194D005AA009 /* notifyvisitors */,
-				35CB5E393033194D005AA009 /* notifyvisitorsNudges */,
-				35624DE730334BBF00DE17DA /* NVECTASDK */,
-				35624DEB30334BBF00DE17DA /* notifyvisitorsNudges */,
-				35624E043033973300DE17DA /* NVECTASDK */,
-				350DC65B304828EE006ED3E9 /* NVECTAAdTrackingSDK */,
-				350DC65D304828EE006ED3E9 /* NVECTASDK */,
-				350DC661304828EE006ED3E9 /* notifyvisitorsNudges */,
+				351D5EE73066AACD000FB8DD /* NVECTAAdTrackingSDK */,
+				351D5EE93066AACD000FB8DD /* NVECTASDK */,
+				351D5EED3066AACD000FB8DD /* notifyvisitorsNudges */,
 			);
 			productName = "nvecta-ios-sdk-example-app";
 			productReference = 35939CDE302F18C100E751C1 /* nvecta-ios-sdk-example-app.app */;
@@ -221,6 +224,7 @@
 			mainGroup = 35939CD5302F18C100E751C1;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				351D5EE63066AACD000FB8DD /* XCLocalSwiftPackageReference "../../../nvecta-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 35939CDF302F18C100E751C1 /* Products */;
@@ -593,62 +597,49 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		351D5EE63066AACD000FB8DD /* XCLocalSwiftPackageReference "../../../nvecta-ios-sdk" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../nvecta-ios-sdk";
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		350DC65B304828EE006ED3E9 /* NVECTAAdTrackingSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = NVECTAAdTrackingSDK;
-		};
-		350DC65D304828EE006ED3E9 /* NVECTASDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = NVECTASDK;
-		};
 		350DC65F304828EE006ED3E9 /* notifyvisitorsNotificationService */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = notifyvisitorsNotificationService;
 		};
-		350DC661304828EE006ED3E9 /* notifyvisitorsNudges */ = {
+		351D5EE73066AACD000FB8DD /* NVECTAAdTrackingSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = notifyvisitorsNudges;
+			productName = NVECTAAdTrackingSDK;
 		};
-		3555D0C9302F696F0023F816 /* NVECTASDK */ = {
+		351D5EE93066AACD000FB8DD /* NVECTASDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NVECTASDK;
+		};
+		351D5EEB3066AACD000FB8DD /* notifyvisitorsNotificationService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = notifyvisitorsNotificationService;
+		};
+		351D5EED3066AACD000FB8DD /* notifyvisitorsNudges */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = notifyvisitorsNudges;
 		};
 		3555D0CB302F696F0023F816 /* notifyvisitorsNotificationService */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = notifyvisitorsNotificationService;
 		};
-		35624DE730334BBF00DE17DA /* NVECTASDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = NVECTASDK;
-		};
 		35624DE930334BBF00DE17DA /* notifyvisitorsNotificationService */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = notifyvisitorsNotificationService;
-		};
-		35624DEB30334BBF00DE17DA /* notifyvisitorsNudges */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = notifyvisitorsNudges;
-		};
-		35624E043033973300DE17DA /* NVECTASDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = NVECTASDK;
 		};
 		35624E063033973300DE17DA /* notifyvisitorsNotificationService */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = notifyvisitorsNotificationService;
 		};
-		35CB5E353033194D005AA009 /* notifyvisitors */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = notifyvisitors;
-		};
 		35CB5E373033194D005AA009 /* notifyvisitorsNotificationService */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = notifyvisitorsNotificationService;
-		};
-		35CB5E393033194D005AA009 /* notifyvisitorsNudges */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = notifyvisitorsNudges;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

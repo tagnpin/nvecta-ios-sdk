@@ -2,10 +2,10 @@
 
 # NVECTA iOS SDK
 
-[![License](https://img.shields.io/cocoapods/l/notifyvisitors.svg?style=flat)](http://cocoapods.org/pods/notifyvisitors)
-[![Platform](https://img.shields.io/cocoapods/p/notifyvisitors.svg?style=flat)](http://cocoapods.org/pods/notifyvisitors)
-![iOS 13.0+](https://img.shields.io/badge/iOS-13.0%2B-blue.svg)
+[![Platform](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Ftagnpin%2Fnvecta-ios-sdk%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/tagnpin/nvecta-ios-sdk)
 [![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
+![iOS 13.0+](https://img.shields.io/badge/iOS-13.0%2B-blue.svg)
+[![License](https://img.shields.io/cocoapods/l/notifyvisitors.svg?style=flat)](http://cocoapods.org/pods/notifyvisitors)
 [![Formerly](https://img.shields.io/badge/Formerly-Notifyvisitors-blue)](https://notifyvisitors.com/)
 
 ## 🚀 Quick Introduction
@@ -68,6 +68,11 @@ From the Xcode menu, select:
 
 - **Assign Packages:** Assign the package as per our recommended configration as shown in the table given below.
 
+  > **Important:**
+  >
+  > - Install **either `NVECTASDK` or `notifyvisitors`** in the Main App target.
+  > - **`NVECTASDK` is recommended** for new integrations. If `NVECTASDK` is installed, do **not** add `notifyvisitors` separately.
+
     <table>
     <thead>
     <tr>
@@ -102,6 +107,12 @@ From the Xcode menu, select:
     <td style="text-align: center;">Main App</td>
     <td style="text-align: center;">Recommended</td>
     <td style="text-align: center;"> if you are using inApp-nudges (for exampele: pip video or native display)</td>
+    </tr>
+    <tr>
+    <td><code>NVECTAAdTrackingSDK</code></td>
+    <td style="text-align: center;">Main App</td>
+    <td style="text-align: center;">Optional</td>
+    <td style="text-align: center;">Required only if you want to use ATT authorization and retrieve the IDFA.</td>
     </tr>
     </tbody>
     </table>
@@ -492,23 +503,26 @@ After completing the integration, verify the `NVECTA iOS SDK` initialization fro
 Filter logs using our SDK tag:
 
 ```text
-[notifyvisitors]
+[NVECTA]
 ```
 
 Example successful initialization logs:
 
 ```text
-[notifyvisitors]-[INFO]: You are in debug mode
-[notifyvisitors]-[INFO]: BrandID >>>>======>>>>> 123XX
-[notifyvisitors]-[INFO]: Inside, write inAppBanner/Survey settings data finished.
+[NVECTA]-[INFO]: You are in debug mode
+[NVECTA]-[INFO]: BrandID >>>>======>>>>> 123XX
+[NVECTA]-[INFO]: Inside, write inAppBanner/Survey settings data finished.
 ```
+
+> **Note:**
+> If you do not see any logs with the `[NVECTA]` tag, you may be using an older version of the SDK. In that case, replace `NVECTA` with `notifyvisitors` when filtering the logs to view the same SDK logs under the [notifyvisitors] tag.
 
 ## Recommended Checks
 
 Verify the following after app launch:
 
 - SDK initializes without errors
-- Your actuak `BrandID` printed in logs successfully
+- Your actual `BrandID` printed in logs successfully
 - No crash appears in logs.
 
 ## Validation
@@ -521,11 +535,11 @@ Follow the **[Integration Code and Event Validation](https://support.nvecta.com/
 - Events are being received successfully.
 - The SDK integration has been completed correctly.
 
-## 📊 What's Next? SDK Features & Guides
+## 🧭 What's Next? SDK Features & Guides
 
 Explore the following guides to learn how to use key NVECTA SDK features in your iOS application.
 
-### 🎯 Tracking Screens
+### 🖥️ Tracking Screens
 
 Track user screen interactions to better understand user app behavior and engagement within your application.
 
@@ -537,7 +551,7 @@ Configure and send push notifications to re-engage users with real-time updates 
 
 ➡️ [View Push Notification Documentation](./Documentation/PushNotifications/PushAppConfiguration.md)
 
-### 🎯 Tracking Events
+### ⚡ Tracking Events
 
 Track user interactions and custom events to better understand user behavior and engagement within your application.
 
@@ -555,32 +569,19 @@ Display targeted in-app messages and campaigns to engage users while they are ac
 
 ➡️ [View In-App Notification Documentation](./Documentation/Features/InAppNotifications.md)
 
-### 🎯 In-App Nudges
+### 👉 In-App Nudges
 
 Guide users with contextual nudges such as embedded banners, cards, tooltips, and other native UI elements to improve engagement and conversions.
 
 ➡️ [View In-App Nudges Documentation](./Documentation/Features/InAppNudges.md)
 
-### 📥 Notification Center
+### 📬 Notification Center
 
 Manage and display user notifications within a centralized in-app notification center experience.
 
 ➡️ [View Notification Center Documentation](./Documentation/Features/NotificationCenter.md)
 
-## 🎯 Migration
-
-- [CocoaPods to Swift Package Manager](./Documentation/Migration/CocoaPodsToSPM.md)
-- [Manual XCFramework to Swift Package Manager](./Documentation/Migration/ManualToSPM.md)
-
-## Troubleshooting
-
-- [Common Issues](./Documentation/Troubleshooting/CommonIssues.md)
-
-## 🆕 Changelog
-
-Refer to the NVECTA iOS SDK [Change Log](CHANGELOG.md).
-
-## Optional IDFA / Tracking Support
+### 🔐 IDFA / Tracking Support
 
 `NVECTAAdTrackingSDK` is an optional binary XCFramework that provides
 App Tracking Transparency (ATT) authorization and IDFA retrieval.
@@ -591,7 +592,20 @@ integrating `NVECTAAdTrackingSDK`.
 For complete installation, configuration, ATT authorization modes,
 IDFA behavior, privacy requirements, and troubleshooting, see:
 
-[IDFA Tracking & Integration](./Documentation/Features/IDFATracking.md)
+➡️ [IDFA Tracking & Integration](./Documentation/Features/IDFATracking.md)
+
+## 🔄 Migration
+
+- [CocoaPods to Swift Package Manager](./Documentation/Migration/CocoaPodsToSPM.md)
+- [Manual XCFramework to Swift Package Manager](./Documentation/Migration/ManualToSPM.md)
+
+## 🛠️ Troubleshooting
+
+- [Common Issues](./Documentation/Troubleshooting/CommonIssues.md)
+
+## 📝 Changelog
+
+Refer to the NVECTA iOS SDK [Change Log](CHANGELOG.md).
 
 ## ❓Questions
 
