@@ -1,6 +1,6 @@
 # CHANGE LOG
 
-## Version 1.0.1 _(September 09, 2026)_
+## Version 1.0.1 _(September 28, 2026)_
 
 This is the release of updated `NVECTASDK (v~1.0.1)` through `Swift Package Manager (SPM)`.
 
