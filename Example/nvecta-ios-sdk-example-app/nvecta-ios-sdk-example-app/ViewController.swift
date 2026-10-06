@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad called")
-        self.view.backgroundColor = .red
+        // self.view.backgroundColor = .red
         NVECTA.shared.delegate = self
         NVECTA.shared.show(userToken: nil, customRule: nil)
 
