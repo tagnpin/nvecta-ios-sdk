@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NVECTASDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NVECTASDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import Foundation
 @_exported import NVECTASDK
 import Swift
@@ -12,9 +12,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import notifyvisitors
 extension NVECTASDK.NVECTA {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func show(userToken tokens: [Swift.String : Any]?, customRule: [Swift.String : Any]?)
-  #endif
   @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
   @objc final public func dismissAllInAppNotifications()
   @objc final public func stopInAppNotifications()
@@ -22,13 +20,9 @@ extension NVECTASDK.NVECTA {
 extension NVECTASDK.NVECTA {
   @objc @discardableResult
   final public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func openUrlGetData(withApplication application: UIKit.UIApplication?, url: Foundation.URL?) -> [Swift.AnyHashable : Any]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @discardableResult
   final public func application(_ application: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([any UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
-  #endif
   @objc @available(iOS 13.0, *)
   final public func scene(_ scene: UIKit.UIScene, willConnectTo session: UIKit.UISceneSession, options connectionOptions: UIKit.UIScene.ConnectionOptions)
   @objc @available(iOS 13.0, *)
@@ -56,9 +50,7 @@ final public class NVECTACenterStyleConfig {
   final public var tabBadgeCountFillColor: UIKit.UIColor?
   final public var tabBadgeCountTextColor: UIKit.UIColor?
   final public var shouldTabBadgeShine: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(unselectedTabTextColor: UIKit.UIColor? = nil, selectedTabTextColor: UIKit.UIColor? = nil, selectedTabBackgroundColor: UIKit.UIColor? = nil, unselectedTabBackgroundColor: UIKit.UIColor? = nil, selectedTabIndex: Swift.Int = 0, tabTextFont: UIKit.UIFont? = nil, tabBadgeCountBorderColor: UIKit.UIColor? = nil, tabBadgeCountFillColor: UIKit.UIColor? = nil, tabBadgeCountTextColor: UIKit.UIColor? = nil, shouldTabBadgeShine: Swift.Bool = true)
-  #endif
   @objc deinit
 }
 extension NVECTASDK.NVECTACenterStyleConfig {
@@ -79,9 +71,7 @@ public struct AnyCodable : Swift.Codable {
   case info = 2
   case debug = 3
   case verbose = 4
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -93,61 +83,36 @@ public struct AnyCodable : Swift.Codable {
     @objc get
     @objc set
   }
+  final public func register(configuration: NVECTASDK.NVECTAConfiguration)
   @objc final public func register(mode: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func register(brandID: Swift.Int, secretKey: Swift.String, appMode: Swift.String, launchingOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getSessionData() -> Foundation.NSDictionary?
-  #endif
   @objc final public func requestAppleAppStoreInAppReview()
   @objc deinit
 }
 extension NVECTASDK.NVECTA {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func registerPush(delegate: (any UserNotifications.UNUserNotificationCenterDelegate)?, application: UIKit.UIApplication, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?)
-  #endif
   @objc final public func didRegisterPushToken(_ application: UIKit.UIApplication, token: Foundation.Data)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getPushRegistrationToken() -> Swift.String?
-  #endif
   @objc final public func didReceiveRemoteNotification(_ userInfo: [Swift.AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIKit.UIBackgroundFetchResult) -> Swift.Void)
   @objc final public func willPresent(_ notification: UserNotifications.UNNotification, completion: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
   @objc final public func didReceive(_ response: UserNotifications.UNNotificationResponse, completion: @escaping () -> Swift.Void)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @available(*, deprecated, renamed: "handleNotificationResponse(_:autoRedirect:completion:)", message: "Use handleNotificationResponse(_:autoRedirect:completion:)  instead")
   final public func pushNotificationActionData(from response: UserNotifications.UNNotificationResponse, autoRedirectOtherApps: Swift.Bool, completion: @escaping ([Swift.AnyHashable : Any]?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func handleNotificationResponse(_ response: UserNotifications.UNNotificationResponse, autoRedirect: Swift.Bool, completion: @escaping (NVECTASDK.NotificationClickResponse?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setPushPreferences(_ preferences: [Swift.String]?, unsubscribeFromAll: Swift.Bool)
-  #endif
   final public func updateBadge(using action: NVECTASDK.BadgeUpdateAction)
 }
 extension NVECTASDK.NVECTA {
   @objc final public func notificationCenter()
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func notificationCenter(with configuration: NVECTASDK.NVECTACenterStyleConfig?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getNotificationCenterData(_ notificationsData: (([Swift.String : Any]?) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func getNotificationCenterCount(with configuration: NVECTASDK.NVECTACenterStyleConfig?, countResult unreadCenterCounts: (([Swift.AnyHashable : Any]?) -> Swift.Void)?)
-  #endif
 }
 extension NVECTASDK.NVECTA {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func userIdentifier(WithUserID userID: Swift.String?, userParams: [Swift.String : Any]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func userIdentifier(WithUserParams userParams: [Swift.String : Any]?, onUserTrackListener: @escaping (Swift.Result<NVECTASDK.UserTrackResponse, any Swift.Error>) -> Swift.Void?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getNvUid() -> Swift.String?
-  #endif
 }
 public struct UserProfile : Swift.Codable {
   public let userId: Swift.String?
@@ -155,9 +120,7 @@ public struct UserProfile : Swift.Codable {
   public var email: Swift.String?
   public var phone: Swift.String?
   public var attributes: [Swift.String : NVECTASDK.AnyCodable]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(userId: Swift.String?, name: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil, attributes: [Swift.String : NVECTASDK.AnyCodable]? = nil)
-  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -185,25 +148,25 @@ public struct NotificationClickResponse {
   public let rawData: [Swift.String : Any]
 }
 @objc public protocol NVECTADelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "nvectaDidTrackEventResponse(_:)", message: "Use nvectaDidTrackEventResponse(_:)  instead")
   @objc(nvectaEventsResponseCallback:) optional func nvectaEventsResponseCallback(_ callback: [Swift.AnyHashable : Any]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(nvectaDidTrackEventResponse:) optional func nvectaDidTrackEventResponse(_ response: [Swift.String : Any]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(nvectaKnownUserIdentified:) optional func nvectaKnownUserIdentified(_ response: [Swift.String : Any]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(nvectaNudgeUiFinalized:) optional func nvectaNudgeUiFinalized(_ response: [Swift.String : Any]?)
-  #endif
 }
 @available(iOS 13.0, *)
 extension NVECTASDK.NVECTA {
   @objc final public func sceneDidBecomeActive(_ scene: UIKit.UIScene)
   @objc final public func sceneWillEnterForeground(_ scene: UIKit.UIScene)
   @objc final public func sceneDidEnterBackground(_ scene: UIKit.UIScene)
+}
+final public class NVECTAConfiguration {
+  final public var brandID: Swift.Int
+  final public var secretKey: Swift.String
+  final public var appMode: Swift.String?
+  final public var trackingAuthorizationWaitTimeInterval: Foundation.TimeInterval?
+  public init()
+  @objc deinit
 }
 public enum NVECTAGlobalAttributePersistenceType {
   case memory
@@ -216,9 +179,7 @@ public enum NVECTAGlobalAttributePersistenceType {
   }
 }
 extension NVECTASDK.NVECTA {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func trackEvent(forEventName eventName: Swift.String, attributes: [Swift.String : Any]?, ltv: Swift.String?, scope: Swift.Int)
-  #endif
   @objc final public func trackScreen(forScreenName screenName: Swift.String)
 }
 extension NVECTASDK.NVECTA {

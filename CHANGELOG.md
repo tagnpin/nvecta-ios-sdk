@@ -1,9 +1,17 @@
 # CHANGE LOG
 
+## Version 1.0.3 _(October 29, 2026)_
+
+### Updated
+
+- Simplify integration steps by using register with configration function
+- system events updated
+- bug fixes
+- code optimisation and performance enhancement
+
 ## Version 1.0.2 _(October 06, 2026)_
 
 Adding `.podspec` file to add cocoapod support for `NVECTAAdTrackingSDK` and `NVECTASDK`.
-
 
 ## Version 1.0.1 _(September 28, 2026)_
 
