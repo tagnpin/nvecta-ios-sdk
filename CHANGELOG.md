@@ -1,5 +1,13 @@
 # CHANGE LOG
 
+## Version 1.0.4 _(November 06, 2026)_
+
+### Updated
+
+- Updated minimum deployment taget set to iOS 14 for `NVECTAAdTrackingSDK`
+- bug fixes
+- code optimisation and performance enhancement
+
 ## Version 1.0.3 _(October 29, 2026)_
 
 ### Updated
