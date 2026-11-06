@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		cA5XV0rUcZYI99Ags4V//3o7Z/U=
+		l3Odl8+GjkQBRvRMWpF6atF0Vm8=
 		</data>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -26,70 +26,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			odAU7fxXc4HqKoKAOPYp2TneMDLm/GKJ/yTRzSaHCeU=
+			uctu8ZtEi9N/bI0HfLm8t2MwBHyRMNB5f0olIskrP70=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sdsIoWd201E75UApLLiHTe5QUOVIQupMVk2HeeAOhH4=
+			G5wOSed473LNdvSs9Zo47WYIWiMWUF3HXHkIMw8tiR0=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O+dIifEqTGrKp4j1bSxQwZMpV+daZKqHVwApXHeLX6Q=
+			f2r1GJevsLGzMnwUb1aBvDiOj0NCtJDZfDFHNmW+Lco=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sdsIoWd201E75UApLLiHTe5QUOVIQupMVk2HeeAOhH4=
+			G5wOSed473LNdvSs9Zo47WYIWiMWUF3HXHkIMw8tiR0=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mZOty6fi11AKyIScgyuynk4vcnTwkcEGKDrby7cyh+U=
+			EdkmX5D5ZGUB5GXq0dVBne5SHzWy8UGi+0WhIqBljck=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			odAU7fxXc4HqKoKAOPYp2TneMDLm/GKJ/yTRzSaHCeU=
+			uctu8ZtEi9N/bI0HfLm8t2MwBHyRMNB5f0olIskrP70=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CArHI+mqV39Oo2nZ6gRqJwwncb5EL0GBnshonRaKhxw=
+			dC4goT9qYQ39GeusAjq+cHTceFlMtTI3r+WJ8myJF48=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3UffDDRBjFUsabnMoxrVsDsVXr/E27vsQ/SU96yPMQI=
+			6MIeIZkZjwmyyx3M2y9AYPcuY/LAeE+MR29pNWgRNzk=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CArHI+mqV39Oo2nZ6gRqJwwncb5EL0GBnshonRaKhxw=
+			dC4goT9qYQ39GeusAjq+cHTceFlMtTI3r+WJ8myJF48=
 			</data>
 		</dict>
 		<key>Modules/NVECTASDK.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SO8AbqqM42Fzsjg1rl0BmIjOhimcyAoPAW7OFf2oBro=
+			X1jHEnqIrXwrnXlQTKAhrtAuhPTmWEyVjoUqVkdyfLM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R2EhMjexngOKLWihD5OHPAw8uMAlXfSZ5ljm7j3jjAk=
+			xCLHvg5/2BAU4wz00mkv4OwIA2AAgimEGJITEw05Aj0=
 			</data>
 		</dict>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
