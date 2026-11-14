@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
   spec.platform     = :ios, "14.0"
 
-  spec.source       = { :git => "https://github.com/tagnpin/nvecta-ios-sdk.git", :tag => "1.0.2" }
+  spec.source       = { :git => "https://github.com/tagnpin/nvecta-ios-sdk.git", :tag => "1.0.4" }
   spec.vendored_frameworks = 'Frameworks/NVECTAAdTrackingSDK.xcframework'
 
 end
