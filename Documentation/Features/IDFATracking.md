@@ -1,8 +1,14 @@
-# NVECTAAdTrackingSDK — IDFA & App Tracking Transparency
+# Mobile Measurement Partner (MMP) – IDFA Integration for iOS
 
-`NVECTAAdTrackingSDK` is an optional dependency that handles **App Tracking Transparency (ATT)** authorization and **IDFA (Identifier for Advertisers)** retrieval for applications using `NVECTASDK` or the `notifyvisitors` SDK.
+`NVECTAAdTrackingSDK` is an optional binary XCFramework designed to support IDFA-based mobile attribution and advertising campaign measurement when using NVECTA as your Mobile Measurement Partner (MMP) for advertising platforms such as Google Ads and Meta.
 
-When integrated, the tracking SDK communicates the available tracking state and IDFA internally to the core SDK. Applications that do not require IDFA can use the core SDK without this dependency.
+The SDK provides support for Apple's App Tracking Transparency (ATT) authorization and Identifier for Advertisers (IDFA) retrieval, subject to user authorization.
+
+When integrated, `NVECTAAdTrackingSDK` automatically communicates the available tracking authorization state and IDFA to the core `NVECTASDK` or `notifyvisitors` SDK for subsequent processing.
+
+Applications that do not require IDFA-based attribution can continue using the core SDK without integrating `NVECTAAdTrackingSDK`.
+
+This guide covers SDK installation, configuration, initialization, ATT authorization, IDFA behavior, and MMP configuration.
 
 ## Requirements
 
@@ -10,13 +16,14 @@ When integrated, the tracking SDK communicates the available tracking state and 
 | ------------ | ------------------------------ |
 | iOS          | iOS 14+                        |
 | Distribution | Swift Package Manager          |
-| SDK          | `NVECTASDK` / `notifyvisitors` |
+| Core SDK     | `NVECTASDK` / `notifyvisitors` |
+| Tracking SDK | `NVECTAAdTrackingSDK`          |
 
 > ATT authorization is available on iOS 14 and later. On unsupported iOS versions, the tracking flow continues without IDFA.
 
 ## Installation
 
-Add `NVECTAAdTrackingSDK` to the application using Swift Package Manager and link it to the application target.
+To enable IDFA-based mobile attribution, add `NVECTAAdTrackingSDK` to your application using Swift Package Manager (SPM) and link it to the application target alongside the core `NVECTA`/`notifyvisitors` iOS SDK.
 
 The dependency configuration is:
 
@@ -26,11 +33,11 @@ Application
 └── NVECTAAdTrackingSDK
 ```
 
-`NVECTAAdTrackingSDK` is required only when the application needs ATT/IDFA functionality.
+`NVECTAAdTrackingSDK` is required when the application needs IDFA retrieval and ATT authorization functionality for mobile attribution.
 
 ## Configure ATT
 
-Add `NSUserTrackingUsageDescription` to the **application's** `Info.plist`:
+To request tracking authorization, add the `NSUserTrackingUsageDescription` to the **application's** `Info.plist`:
 
 ```xml
 <key>NSUserTrackingUsageDescription</key>
@@ -92,8 +99,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
              nvMode = "live"
         #endif
 
+        // Initialize the core SDK.
         NVECTA.shared.register(mode: nvMode!)
 
+        // Initialize the optional tracking SDK.
         NVECTAAdTrackingManager.shared.start();
 
         return true
@@ -226,6 +235,14 @@ The SDK handles the current ATT authorization state automatically.
 > If the application already has an ATT authorization history, `start()` reads the current state. For example, a previously authorized user does not receive the authorization prompt again.
 
 ---
+
+## Mobile Measurement Partner (MMP) Configuration
+
+After integrating `NVECTAAdTrackingSDK`, complete the applicable advertising platform configuration to enable mobile attribution and campaign measurement with `NVECTA` as your Mobile Measurement Partner (MMP).
+
+For detailed advertising platform configuration, refer to:
+<br>
+➡️ **[Set Up NVECTA as Your Mobile Measurement Partner (MMP) for Google Ads and Meta](https://www.nvecta.com/support/solutions/articles/84000399758-set-up-nvecta-as-your-mobile-measurement-partner-mmp-for-google-ads-and-meta)**
 
 ## Privacy and IDFA Considerations
 

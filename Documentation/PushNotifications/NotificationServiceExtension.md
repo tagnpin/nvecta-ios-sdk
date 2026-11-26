@@ -1,9 +1,9 @@
-# Notification Service Extension
+# Notification Service Extension (React Native)
 
 Notification Service Extension has been introduced in iOS 10 by Apple which allows you to add images, audio or video content to your push notification. NVECTA SDK will use it to enable you to add Action buttons, badge counts, and to track delivery counts in your NVECTA panel as well. So It is an Important step which you need to configure properly as described in this documentation.
 
 Official Documentation:  
-https://www.nvecta.com/docs/notification-service-extension
+https://www.nvecta.com/docs/react-native-notification-service-extension
 
 ---
 
