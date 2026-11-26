@@ -1,5 +1,13 @@
 # CHANGE LOG
 
+## Version 1.0.6 _(November 26, 2026)_
+
+### Updated
+
+- Optimised `PrivacyInfo` info into `NVECTAAdTrackingSDK`
+- Bug fixes
+- Code optimisation and performance enhancement
+
 ## Version 1.0.5 _(November 14, 2026)_
 
 ### Updated

@@ -6,31 +6,31 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		xp8RWGdGfS4IRiMNimZ5ASMdSC0=
+		rh/efTK1o8TJl+eIPfUkWT+yr8w=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		hja4Wt0GT1+fsHGYkcYbOdLB1vk=
+		BiZX6UalYbV8xjrDp/A8VLj3Y5U=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		GiykUPmQoGTSOhLN/kghZb7hvlA=
+		qSoh93TZYvEZLqKAyB9/ovUI6iw=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		uDnJrZ2Z9GIoAT5UN5rAPrD09ko=
+		tG8yPFZjNqUxcyqEto8nQwyQyho=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		GiykUPmQoGTSOhLN/kghZb7hvlA=
+		qSoh93TZYvEZLqKAyB9/ovUI6iw=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		/aBylxV/G1f5T1WO7ij7Kzfk1XA=
+		lAxhapOqvRkHk3w1bYE9oxpXSLg=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		ZvaWO8TswXbn2dU0k+ObrnVSJUQ=
+		ej0sOmKJSG9S+OPUHeDvLDyPQQ8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,42 +39,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2s51wz7U7qTLeoS1eF205hP1oGbouv7KF9NDRAV/g+M=
+			EUdwcGclfiFeT94n5R2jtHE4xUaxAT3Hfdt4h+6JHxM=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TaE68ujVOS0pSjJt4MLWUpRjFUee/A9li5twkIWfKic=
+			39hvsOoRZw/kT+HYQRSXBjne7upo2uDbmJfBpvu328g=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tjt594zJnkFYcEogBCi3qQghvGHd9c3Nl4snJ1pDVYA=
+			KXPv+Aap/J5hXT78dEA8r+dKdlEWxAAcPNpczSq5XIo=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TaE68ujVOS0pSjJt4MLWUpRjFUee/A9li5twkIWfKic=
+			39hvsOoRZw/kT+HYQRSXBjne7upo2uDbmJfBpvu328g=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bClQFvIeYM+NPNJGQFqG3fllx6Bv8sZg+UXEFErfeV0=
+			nF5BA8XrUuDPak95Q/R60WgRZV1S9whooPlkvMJL9vs=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C6YdpfSMBgLTqGubbDIcmzMwkYSNqwO+iri9jmYF7S4=
+			+rb6z7MstHiwb7y3sv3qQb89vQKiroh/cOmRMpvPcsM=
 			</data>
 		</dict>
 	</dict>

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "NVECTAAdTrackingSDK"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.6"
   spec.summary      = "NVECTAAdTrackingSDK dependency for optional IDFA retrieval for iOS apps using NVECTASDK or the notifyvisitors SDK."
   spec.description  = <<-DESC
   NVECTAAdTrackingSDK is an optional dependency that handles App Tracking Transparency (ATT) authorization and IDFA (Identifier for Advertisers) retrieval for applications using NVECTASDK or the notifyvisitors SDK.
@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
   spec.platform     = :ios, "14.0"
 
-  spec.source       = { :git => "https://github.com/tagnpin/nvecta-ios-sdk.git", :tag => "1.0.4" }
+  spec.source       = { :git => "https://github.com/tagnpin/nvecta-ios-sdk.git", :tag => "#{spec.version}" }
   spec.vendored_frameworks = 'Frameworks/NVECTAAdTrackingSDK.xcframework'
 
 end

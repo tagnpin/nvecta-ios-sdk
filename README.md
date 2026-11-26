@@ -581,7 +581,7 @@ Manage and display user notifications within a centralized in-app notification c
 
 ➡️ [View Notification Center Documentation](./Documentation/Features/NotificationCenter.md)
 
-### 🔐 IDFA / Tracking Support
+<!-- ### 🔐 IDFA / Tracking Support
 
 `NVECTAAdTrackingSDK` is an optional binary XCFramework that provides
 App Tracking Transparency (ATT) authorization and IDFA retrieval.
@@ -592,7 +592,20 @@ integrating `NVECTAAdTrackingSDK`.
 For complete installation, configuration, ATT authorization modes,
 IDFA behavior, privacy requirements, and troubleshooting, see:
 
-➡️ [IDFA Tracking & Integration](./Documentation/Features/IDFATracking.md)
+➡️ [IDFA Tracking & Integration](./Documentation/Features/IDFATracking.md) -->
+
+### 🔐 Mobile Measurement Partner (MMP) – IDFA Support
+
+To support IDFA-based mobile attribution and advertising campaign measurement with NVECTA as your Mobile Measurement Partner (MMP), NVECTA provides an optional `NVECTAAdTrackingSDK`.
+
+`NVECTAAdTrackingSDK` is a binary XCFramework that provides support for Apple's App Tracking Transparency (ATT) authorization and Identifier for Advertisers (IDFA) retrieval, subject to user authorization.
+
+Applications that do not require IDFA can continue using the core `NVECTA iOS SDK` without integrating `NVECTAAdTrackingSDK`.
+
+For detailed integration, configuration, and privacy requirements, refer to the following documentation:
+
+- **SDK Integration:** [IDFA Tracking & Integration](./Documentation/Features/IDFATracking.md)
+- **MMP Configuration:** [Set Up NVECTA as Your Mobile Measurement Partner (MMP)](https://www.nvecta.com/support/solutions/articles/84000399758-set-up-nvecta-as-your-mobile-measurement-partner-mmp-for-google-ads-and-meta)
 
 ## 🔄 Migration
 
