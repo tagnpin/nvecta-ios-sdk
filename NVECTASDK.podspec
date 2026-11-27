@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "NVECTASDK"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "NVECTASDK for iOS. Turn customer data into autonomous growth| Powered by Agentic AI."
   spec.description  = <<-DESC
   NVECTA is an AI-powered platform that transforms data into instant answers,
