@@ -1,5 +1,14 @@
 # CHANGE LOG
 
+## Version 1.0.7 _(November 27, 2026)_
+
+### Updated
+
+- Optimised `PrivacyInfo` info of `NVECTAAdTrackingSDK`
+- Updated minimum deployment taget set to iOS 14 for `NVECTAAdTrackingSDK`
+- Bug fixes
+- Code optimisation and performance enhancement
+
 ## Version 1.0.6 _(November 26, 2026)_
 
 ### Updated

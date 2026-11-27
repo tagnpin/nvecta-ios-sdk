@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		rh/efTK1o8TJl+eIPfUkWT+yr8w=
+		8mQFHocdwNptUa6/VKcRtGQqNI4=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -14,19 +14,19 @@
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		qSoh93TZYvEZLqKAyB9/ovUI6iw=
+		nyaXRIPI1DB2uIbVmWAV+eYUMfk=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		tG8yPFZjNqUxcyqEto8nQwyQyho=
+		5XqKcBn167VXx5jILHPlsvAiM8w=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		qSoh93TZYvEZLqKAyB9/ovUI6iw=
+		nyaXRIPI1DB2uIbVmWAV+eYUMfk=
 		</data>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		lAxhapOqvRkHk3w1bYE9oxpXSLg=
+		wyDah5XWcpTaGyaTABu6ZsKwKwA=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -46,28 +46,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			39hvsOoRZw/kT+HYQRSXBjne7upo2uDbmJfBpvu328g=
+			IplR4CEKsjzErTizauIu7unaCkuFVTGOPUaAbgJCf1s=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KXPv+Aap/J5hXT78dEA8r+dKdlEWxAAcPNpczSq5XIo=
+			pqcKtAe4qwHDn6/M945wYnScmTSFP/uEP4/AknA4gxE=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			39hvsOoRZw/kT+HYQRSXBjne7upo2uDbmJfBpvu328g=
+			IplR4CEKsjzErTizauIu7unaCkuFVTGOPUaAbgJCf1s=
 			</data>
 		</dict>
 		<key>Modules/NVECTAAdTrackingSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nF5BA8XrUuDPak95Q/R60WgRZV1S9whooPlkvMJL9vs=
+			FiQRMSCS4IOn/17AcK1Epfozw1Lagj58POoxGu96Nzc=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
